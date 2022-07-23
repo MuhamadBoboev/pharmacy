@@ -1,0 +1,17 @@
+.svg {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: contain;
+}
+.button {
+  @include fontRalewayBold(14px, 110%);
+  color: $colorWhite;
+  text-transform: uppercase;
+  padding: 17px 41px;
+  background-color: $BGButton;
+  outline: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(47, 211, 174, 0.1);
+  border-radius: 50px;
+}

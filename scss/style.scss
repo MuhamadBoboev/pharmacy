@@ -1,0 +1,72 @@
+@import "../scss/fonts_mixins.scss";
+@import "../bootstrap-5.2.0-beta1-dist/css/bootstrap.css";
+a {
+  text-decoration: none;
+}
+body {
+  min-width: 100%;
+  // height: 100%;
+  font-family: "cursive";
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorBlackLevel2;
+  line-height: 130%;
+  margin: 0 auto;
+  padding: 0;
+}
+a,
+a:hover,
+a:active,
+li,
+ul {
+  text-decoration: none;
+  list-style: none;
+  color: $colorBlackLevel2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+/* ********** container ************ */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 0 1;
+}
+._container {
+  max-width: 1520px;
+  padding: 0px 15px;
+  // background-color: red;
+  margin: 0 auto;
+}
+.display-none {
+  display: none;
+}
+/* ***** global-style ***** */
+@import "global-style.scss";
+@import "header.scss";
+
+@import "footer.scss";
+.font {
+  // @include fontBold(15px, 21px);
+}

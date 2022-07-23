@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Raleway-Black";
+  src: url(../fonts/Raleway-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url(../fonts/Raleway-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(../fonts/Raleway-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url(../fonts/Raleway-Regular.ttf);
+  font-weight: 400;
+}
+
+/* *************** fonts-mixin ********************* */
+@mixin fontRobotoBold($size, $lineHeight) {
+  font-family: "Roboto-Bold";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 700;
+}
+@mixin fontRobotoMedium($size, $lineHeight) {
+  font-family: "Roboto-Medium";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 500;
+}
+@mixin fontRobotoRegular($size, $lineHeight) {
+  font-family: "Roboto-Regular";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 400;
+}
+@mixin fontRobotoLight($size, $lineHeight) {
+  font-family: "Roboto-Light";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 300;
+}
+@mixin fontRalewayBlack($size, $lineHeight) {
+  font-family: "Raleway-Black";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 900;
+}
+@mixin fontRalewayExtraBold($size, $lineHeight) {
+  font-family: "Raleway-ExtraBold";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 800;
+}
+@mixin fontRalewayBold($size, $lineHeight) {
+  font-family: "Raleway-Bold";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 700;
+}
+@mixin fontRalewayMedium($size, $lineHeight) {
+  font-family: "Raleway-Medium";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 500;
+}
+@mixin fontRalewayRegular($size, $lineHeight) {
+  font-family: "Raleway-Regular";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 400;
+}
+
+/* ********* mixin ************* */
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+/* ***** Color ***** */
+$colorBlue: #001a70;
+$colorAquamarine: #47d7ac;
+$colorGreen: #78d64b;
+$colorYellow: #fedb00;
+$colorCyen: #5bc2c7;
+$colorWhite: white;
+
+/* ***** Black ******** */
+$colorBlack: #333333;
+$colorBlackLevel1: #4f4f4f;
+$colorBlackLevel2: #828282;
+$colorBlackLevel3: #f1f1f1;
+
+/* ******* Background-color *********** */
+$BGHeaderTop: #f8f8f8;
+$BGButton: #2fd3ae;
+/* ****** header-top a ****** */
+$headerTopColor: #7894a4;
+$headerLogoTitle: #011d71;
