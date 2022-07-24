@@ -545,3 +545,113 @@
     padding: 37px 0;
   }
 }
+.header__bottom {
+  background-color: #f6fbfa;
+}
+.header__bottom-items {
+  padding: 20px 0px;
+}
+.slider-track {
+  display: flex;
+  @include grid(repeat(9, max-content), auto);
+  grid-gap: 20px;
+}
+.header__bottom-item {
+  @include fontRalewayRegular(14px, 110%);
+  border: none;
+  color: $colorBlackLevel1;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  letter-spacing: 5%;
+}
+
+.header__bottom-item__first {
+  color: $colorWhite;
+  background-color: $colorCyen;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+.header__bottom-item__second {
+  background-color: $colorOrange;
+  a {
+    color: $colorWhite;
+  }
+}
+.header__bottom-item__text {
+  padding: 6px 10px 8px 10px;
+}
+.header__bottom-item__svg {
+  padding-right: 10px;
+  @include fontRalewayBold(18px, 110%);
+}
+
+.header__contacts__block {
+  background-color: $colorAquamarine;
+}
+.header__contacts__block__text {
+  width: 100%;
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+.header__contacts__block__text__active {
+  width: 100%;
+  padding: 12px 0;
+  color: $colorWhite;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.header__contacts__block__svg {
+  background-image: url(../img/svg/chevron_duo_down.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  align-self: center;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+.header__contacts-2 {
+  background-image: url(../img/svg/close_chevron.svg);
+}
+@media (max-width: 768px) {
+  .header__contacts {
+    grid-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 45px 15px;
+    background-color: $BGHeaderContactsBlock;
+  }
+  .header__messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 15px;
+    background-color: $colorWhite;
+  }
+  .header__mobile__contacts__active {
+    display: none;
+  }
+  .header__mobile__contacts__active.active {
+    display: block;
+  }
+  .header__contacts__block__text__active {
+  }
+  [data-contact="1"] {
+    display: flex;
+  }
+  [data-contact="1"].active {
+    display: none;
+  }
+  [data-contact="2"] {
+    display: none;
+  }
+  [data-contact="2"].active {
+    display: flex;
+  }
+}
