@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   burger.addEventListener("click", (e) => {
     menu.classList.toggle("active");
     burger.classList.toggle("active");
+    document
+      .querySelector(".header__contacts__block")
+      .classList.toggle("active");
+    document
+      .querySelector(".header__bottom__condition")
+      .classList.toggle("active");
   });
   const headerContacts = document.querySelector(
     ".header__contacts__block__text"

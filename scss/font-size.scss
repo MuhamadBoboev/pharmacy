@@ -1,0 +1,20 @@
+.fz-16px {
+  font-size: 16px;
+}
+.fz-18px {
+  font-size: 18px;
+}
+.fz-14px {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .fz-16px {
+    font-size: 16px;
+  }
+  .fz-18px {
+    font-size: 18px;
+  }
+  .fz-14px {
+    font-size: 18px;
+  }
+}

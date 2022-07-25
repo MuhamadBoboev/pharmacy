@@ -66,7 +66,9 @@ div {
 @import "global-style.scss";
 @import "header.scss";
 
+@import "main-content.scss";
 @import "footer.scss";
+@import "font-size.scss";
 .font {
   // @include fontBold(15px, 21px);
 }

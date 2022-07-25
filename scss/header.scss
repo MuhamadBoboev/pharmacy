@@ -548,6 +548,16 @@
 .header__bottom {
   background-color: #f6fbfa;
 }
+.slide.header__bottom-item {
+  // width: max-content;
+  // height: 100%;
+  // flex-shrink: 0;
+  // font-size: 50px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // border: 1px solid #000;
+}
 .header__bottom-items {
   padding: 20px 0px;
 }
@@ -580,6 +590,7 @@
 }
 .header__bottom-item__text {
   padding: 6px 10px 8px 10px;
+  display: block;
 }
 .header__bottom-item__svg {
   padding-right: 10px;
@@ -617,6 +628,13 @@
 .header__contacts-2 {
   background-image: url(../img/svg/close_chevron.svg);
 }
+.header__contacts__block.active {
+  display: none;
+}
+.header__bottom__condition.active {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header__contacts {
     grid-gap: 30px;
