@@ -1,20 +1,38 @@
-.fz-16px {
-  font-size: 16px;
+.fz-24px {
+  font-size: 24px;
 }
 .fz-18px {
   font-size: 18px;
 }
+.fz-16px {
+  font-size: 16px;
+}
+.fz-15px {
+  font-size: 15px;
+}
 .fz-14px {
   font-size: 14px;
 }
+.fz-12px {
+  font-size: 12px;
+}
 @media (max-width: 768px) {
-  .fz-16px {
-    font-size: 16px;
+  .fz-24px {
+    font-size: 24px;
   }
   .fz-18px {
     font-size: 18px;
   }
+  .fz-16px {
+    font-size: 16px;
+  }
+  .fz-15px {
+    font-size: 14px;
+  }
   .fz-14px {
-    font-size: 18px;
+    font-size: 12px;
+  }
+  .fz-12px {
+    font-size: 12px;
   }
 }
