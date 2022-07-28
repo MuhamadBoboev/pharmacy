@@ -137,3 +137,13 @@
     font-size: 18px;
   }
 }
+.swiper-pagination {
+  position: static;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: $colorWhite;
+  border: 1px solid $BGButton;
+  margin-left: 10px;
+}

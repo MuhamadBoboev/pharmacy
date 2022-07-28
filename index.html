@@ -661,11 +661,11 @@
 
         <section class="capabilities">
           <div class="_container capabilities_container">
-            <div class="slider">
-              <div class="slider-list grab">
-                <div class="slider-track capabilities__blocks">
+            <div class="sli">
+              <div class="swiper-container swiper-capabilities">
+                <div class="swiper-wrapper capabilities__blocks">
                   <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
                   >
                     <a
                       href="#"
@@ -689,7 +689,7 @@
                     </a>
                   </div>
                   <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
                   >
                     <a
                       href="#"
@@ -713,7 +713,7 @@
                     </a>
                   </div>
                   <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
                   >
                     <a
                       href="#"
@@ -737,7 +737,7 @@
                     </a>
                   </div>
                   <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
                   >
                     <a
                       href="#"
@@ -761,7 +761,7 @@
                     </a>
                   </div>
                   <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
                   >
                     <a
                       href="#"
@@ -787,11 +787,8 @@
                 </div>
               </div>
               <div
-                class="slider-arrows header__bottom__slider-arrows capabilities__arrows"
-              >
-                <button type="button" class="svg prev"></button>
-                <button type="button" class="svg next"></button>
-              </div>
+                class="swiper-pagination swiper-pagination-capabilities"
+              ></div>
             </div>
           </div>
         </section>
@@ -1425,117 +1422,110 @@
         <section class="working">
           <div class="_container capabilities_container">
             <h2 class="main-title">Как мы работаем?</h2>
-            <div class="slider">
-              <div class="slider-list grab">
+
+            <div class="swiper-container swiper-working">
+              <div
+                class="swiper-wrapper capabilities__blocks how-working__blocks"
+              >
                 <div
-                  class="slider-track capabilities__blocks how-working__blocks"
-                  style="transform: translate3d(0px, 0px, 0px)"
+                  class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
                 >
-                  <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                  <a
+                    href="#"
+                    class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
                   >
-                    <a
-                      href="#"
-                      class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
-                    >
-                      <div class="capabilities__img-block">
-                        <div
-                          class="svg how-working__img how-working__img-1"
-                        ></div>
-                      </div>
-                      <div class="capabilities__info">
-                        <p
-                          class="header__bottom-item__svg capabilities__title fz-15px"
-                        >
-                          Выберите товар
-                        </p>
-                        <p class="capabilities__text fz-14px">
-                          Воспользуйтесь поиском, чтобы найти необходимый товар
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    <div class="capabilities__img-block">
+                      <div
+                        class="svg how-working__img how-working__img-1"
+                      ></div>
+                    </div>
+                    <div class="capabilities__info">
+                      <p
+                        class="header__bottom-item__svg capabilities__title fz-15px"
+                      >
+                        Выберите товар
+                      </p>
+                      <p class="capabilities__text fz-14px">
+                        Воспользуйтесь поиском, чтобы найти необходимый товар
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                >
+                  <a
+                    href="#"
+                    class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
                   >
-                    <a
-                      href="#"
-                      class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
-                    >
-                      <div class="capabilities__img-block">
-                        <div
-                          class="svg how-working__img how-working__img-2"
-                        ></div>
-                      </div>
-                      <div class="capabilities__info">
-                        <p
-                          class="header__bottom-item__svg capabilities__title fz-15px"
-                        >
-                          Выберите аптеку
-                        </p>
-                        <p class="capabilities__text fz-14px">
-                          Выберите аптеку, из которой вам будет удобно забрать
-                          заказ
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    <div class="capabilities__img-block">
+                      <div
+                        class="svg how-working__img how-working__img-2"
+                      ></div>
+                    </div>
+                    <div class="capabilities__info">
+                      <p
+                        class="header__bottom-item__svg capabilities__title fz-15px"
+                      >
+                        Выберите аптеку
+                      </p>
+                      <p class="capabilities__text fz-14px">
+                        Выберите аптеку, из которой вам будет удобно забрать
+                        заказ
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                >
+                  <a
+                    href="#"
+                    class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
                   >
-                    <a
-                      href="#"
-                      class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
-                    >
-                      <div class="capabilities__img-block">
-                        <div
-                          class="svg how-working__img how-working__img-3"
-                        ></div>
-                      </div>
-                      <div class="capabilities__info">
-                        <p
-                          class="header__bottom-item__svg capabilities__title fz-15px"
-                        >
-                          Оформите заказ
-                        </p>
-                        <p class="capabilities__text fz-14px">
-                          Следуйте инструкциям и завершите оформление заказа
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                    <div class="capabilities__img-block">
+                      <div
+                        class="svg how-working__img how-working__img-3"
+                      ></div>
+                    </div>
+                    <div class="capabilities__info">
+                      <p
+                        class="header__bottom-item__svg capabilities__title fz-15px"
+                      >
+                        Оформите заказ
+                      </p>
+                      <p class="capabilities__text fz-14px">
+                        Следуйте инструкциям и завершите оформление заказа
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide header__bottom-item header__bottom-item__first capabilitiis__items"
+                >
+                  <a
+                    href="#"
+                    class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
                   >
-                    <a
-                      href="#"
-                      class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body"
-                    >
-                      <div class="capabilities__img-block">
-                        <div
-                          class="svg how-working__img how-working__img-4"
-                        ></div>
-                      </div>
-                      <div class="capabilities__info">
-                        <p
-                          class="header__bottom-item__svg capabilities__title fz-15px"
-                        >
-                          Получите заказ
-                        </p>
-                        <p class="capabilities__text fz-14px">
-                          Заберите заказ в ближайшей к Вам аптеке
-                        </p>
-                      </div>
-                    </a>
-                  </div>
+                    <div class="capabilities__img-block">
+                      <div
+                        class="svg how-working__img how-working__img-4"
+                      ></div>
+                    </div>
+                    <div class="capabilities__info">
+                      <p
+                        class="header__bottom-item__svg capabilities__title fz-15px"
+                      >
+                        Получите заказ
+                      </p>
+                      <p class="capabilities__text fz-14px">
+                        Заберите заказ в ближайшей к Вам аптеке
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div
-                class="slider-arrows header__bottom__slider-arrows capabilities__arrows"
-              >
-                <button type="button" class="svg prev"></button>
-                <button type="button" class="svg next"></button>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>
@@ -1658,126 +1648,146 @@
                 <div
                   class="swiper-wrapper product__product-cards partners__items"
                 >
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-1.png"
-                          alt="таблетка"
-                        />
+                  <div class="swiper-slide">
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-1.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-2.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-2.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-3.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-3.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-4.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-4.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-5.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-5.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-6.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-6.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-7.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-7.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-8.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-8.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-9.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-9.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-10.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-10.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-11.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-11.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a href="#" class="swiper-slide product-card partners__item">
-                    <div class="product-card__block__img">
-                      <div class="partners__item__img">
-                        <img
-                          src="./img/main-content/partner-12.png"
-                          alt="таблетка"
-                        />
+                    </a>
+                    <a href="#" class="product-card partners__item">
+                      <div class="product-card__block__img">
+                        <div class="partners__item__img">
+                          <img
+                            src="./img/main-content/partner-12.png"
+                            alt="таблетка"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-wrapper__buttons">
+                  <div class="product-cards__prev swiper-button-prev">
+                    <div class="svg"></div>
+                  </div>
+                  <div class="product-cards__next swiper-button-next">
+                    <div class="svg"></div>
+                  </div>
                 </div>
               </div>
             </div>

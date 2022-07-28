@@ -271,9 +271,9 @@ document.addEventListener("DOMContentLoaded", () => {
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
-    mousewheel: {
-      sensitivity: 1,
-    },
+    // mousewheel: {
+    //   sensitivity: 1,
+    // },
 
     // autoplay: {
     //   delay: 3000,
@@ -317,9 +317,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //   delay: 3000,
     //   disableOnInteraction: false,
     // },
-    mousewheel: {
-      sensitivity: 1,
-    },
+    // mousewheel: {
+    //   sensitivity: 1,
+    // },
 
     pagination: {
       el: ".swiper-pagination",
@@ -331,13 +331,110 @@ document.addEventListener("DOMContentLoaded", () => {
   swProduct2.controller.control = swProduct1;
 
   let swPartners = new Swiper(".swiper-partners", {
-    slidesPerView: 6,
-    spaceBetween: 30,
-    slidesView: 4,
-
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // slidesView: 4,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      961: {
+        slidesPerView: 4,
+      },
+      1201: {
+        slidesPerView: 6,
+      },
+    },
     mousewheel: {
       sensitivity: 1,
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  let swCapabilities = new Swiper(".swiper-capabilities", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // slidesView: 4,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      961: {
+        slidesPerView: 4,
+      },
+      1201: {
+        slidesPerView: 6,
+      },
+    },
+    mousewheel: {
+      sensitivity: 1,
+    },
+    pagination: {
+      el: ".swiper-pagination-capabilities",
+      clickable: true,
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  let swPagination = new Swiper(".swiper-working", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // slidesView: 4,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      961: {
+        slidesPerView: 4,
+      },
+      1201: {
+        slidesPerView: 6,
+      },
+    },
+    // mousewheel: {
+    //   sensitivity: 1,
+    // },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
