@@ -431,8 +431,8 @@
   margin-top: 10px;
 }
 .product__product-cards {
-  @include grid(1fr 1fr 1fr 1fr 1fr, 1fr 1fr);
-  grid-gap: 25px;
+  @include grid(1fr 1fr 1fr 1fr 1fr, 1fr);
+  // grid-gap: 25px;
   margin-top: 40px;
 }
 .product-card {
@@ -484,7 +484,7 @@
 .product-card__top {
   display: flex;
   justify-content: space-between;
-  grid-gap: 20px;
+  // grid-gap: 20px;
   width: 100%;
 }
 .product-card__available {
@@ -585,28 +585,82 @@
 .header__bottom__slider-arrows.product-cards__slider-arrows {
   background: none;
 }
+.swiper-wrapper__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+
+  right: 0;
+  width: 100px;
+  height: 40px;
+  top: 3px;
+  z-index: 1;
+  left: 70%;
+}
 .product-cards__prev {
-  background-image: url(../img/main-content/before.svg);
-  background-color: $colorWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   border: 1px solid #f7fafb;
+  // background-color: red;
+  &::after {
+    content: none;
+  }
+  div {
+    background-image: url(../img/main-content/before.svg);
+    background-color: $colorWhite;
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 9px;
+    z-index: 1;
+  }
 }
 .product-cards__next {
-  background-color: $colorWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  background-image: url(../img/main-content/after.svg);
   width: 40px;
   height: 40px;
   border-radius: 50px;
   border: 1px solid #f7fafb;
+  // background-color: red;
+  &::after {
+    content: none;
+  }
+  div {
+    background-image: url(../img/main-content/after.svg);
+    background-color: $colorWhite;
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 9px;
+    z-index: 1;
+  }
 }
+// .product-cards__next {
+//   background-color: $colorWhite;
+
+//   background-image: url(../img/main-content/after.svg);
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50px;
+//   border: 1px solid #f7fafb;
+// }
 .capabilities__arrows {
   display: none;
 }
 .working {
   margin-top: 70px;
+}
+.product__product-cards {
+  // height: calc(100% - 30px) / 2;
+  grid-row-gap: 30px;
 }
 @media (max-width: 768px) {
   .product-cards__slider-arrows {

@@ -245,6 +245,91 @@ document.addEventListener("DOMContentLoaded", () => {
       clickable: true,
     },
   });
+  let swProduct1 = new Swiper(".product-swiper-1", {
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loopedSlides: 5, //looped slides should be the same
+    autoHeight: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      961: {
+        slidesPerView: 3,
+      },
+      1201: {
+        slidesPerView: 5,
+      },
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+    mousewheel: {
+      sensitivity: 1,
+    },
+
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  let swProduct2 = new Swiper(".product-swiper-2", {
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+
+    loopedSlides: 5, //looped slides should be the same
+    autoHeight: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      961: {
+        slidesPerView: 3,
+      },
+      1201: {
+        slidesPerView: 5,
+      },
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    mousewheel: {
+      sensitivity: 1,
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  swProduct1.controller.control = swProduct2;
+  swProduct2.controller.control = swProduct1;
+
   let swHeaderBottom = new Swiper(".header-bottom__desktop", {
     slidesPerView: 2,
     spaceBetween: 20,
