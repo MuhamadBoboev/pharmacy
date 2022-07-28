@@ -330,6 +330,32 @@ document.addEventListener("DOMContentLoaded", () => {
   swProduct1.controller.control = swProduct2;
   swProduct2.controller.control = swProduct1;
 
+  let swPartners = new Swiper(".swiper-partners", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    slidesView: 4,
+
+    mousewheel: {
+      sensitivity: 1,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
   let swHeaderBottom = new Swiper(".header-bottom__desktop", {
     slidesPerView: 2,
     spaceBetween: 20,
