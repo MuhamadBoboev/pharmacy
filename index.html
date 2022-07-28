@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.css"
     />
-
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -173,7 +173,7 @@
           <div class="_container">
             <div class="header__bottom-items">
               <div class="slider">
-                <div class="slider-list">
+                <div class="slider-list grab header-bottom__desktop">
                   <div class="slider-track">
                     <div
                       class="slide header__bottom-item header__bottom-item__first"
@@ -479,13 +479,16 @@
 
       <main class="main">
         <section class="main-content">
-          <div class="slider _container main_container">
-            <section class="slider-list grab main__main-content">
-              <div class="slider-track main__main-content__body">
-                <div class="slide main-content__left-block">
+          <div class="_container main_container">
+            <section
+              class="main__main-content swiper-container main-top-swiper"
+            >
+              <div class="main__main-content__body swiper-wrapper">
+                <div class="swiper-slide main-content__left-block">
                   <div class="left-block__text-block">
                     <p class="left-block__title">
-                      <span class="block__title__span">Oral-b vitality </span
+                      <span class="block__title__span"
+                        >Oral-b vitality <br /></span
                       >электрическая зубная щетка
                     </p>
                     <p class="left-block__text fz-16px">
@@ -493,26 +496,34 @@
                       эффективно очищает полость рта по сравнению с обычной
                       мануальной зубной щеткой.
                     </p>
-                    <div class="main-content_button-block">
-                      <button class="button main-content_button">
+                    <div class="main-content_button-block none-768">
+                      <a href="#" class="button main-content_button">
                         <p class="main-content_button__text">
                           Перейти в каталог
                         </p>
                         <div class="svg main-content_button__svg"></div>
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <div class="left-block__img-block">
-                    <img
-                      class="img img-p left-block__img"
-                      src="./img/main-content/left-block.jpg"
-                      width="324px"
-                      height="324px"
-                      alt="электронная зубная щетка"
-                    />
+                    <div>
+                      <img
+                        class="img img-p left-block__img"
+                        src="./img/main-content/left-block.jpg"
+                        width="324px"
+                        height="324px"
+                        alt="электронная зубная щетка"
+                      />
+                    </div>
+                  </div>
+                  <div class="main-content_button-block">
+                    <a href="#" class="button main-content_button">
+                      <p class="main-content_button__text">Перейти в каталог</p>
+                      <div class="svg main-content_button__svg"></div>
+                    </a>
                   </div>
                 </div>
-                <div class="slide main-content__right-block">
+                <div class="swiper-slide main-content__right-block">
                   <div class="right-block__first-block">
                     <div class="right-block__first-block__body">
                       <p class="first-block__body__title fz-18px">
@@ -533,14 +544,15 @@
                       <div
                         class="main-content_button-block main-content_button-block_2"
                       >
-                        <button
+                        <a
+                          href="#"
                           class="button main-content_button main-content_button_2"
                         >
                           <p class="main-content_button__text">
                             Перейти в каталог
                           </p>
                           <div class="svg main-content_button__svg"></div>
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -558,7 +570,7 @@
                           <p class="second-block__item__text fz-14px">
                             Нэйчес Баунти Кожа, волосы, ногти, капсулы 60 шт
                           </p>
-                          <div class="second-block__item__price-block reviews">
+                          <div class="second-block__item__price-block">
                             <p class="second-block__item__price fz-18px">
                               244 руб.
                             </p>
@@ -586,7 +598,7 @@
                           <p class="second-block__item__text fz-14px">
                             Арбидол® - препарат от ОРВИ и гриппа, 10 таблеток
                           </p>
-                          <div class="second-block__item__price-block reviews">
+                          <div class="second-block__item__price-block reiews">
                             <p class="second-block__item__price fz-18px">
                               145 руб.
                             </p>
@@ -615,7 +627,7 @@
                             Desmoxan - лечение, при бросании курения, 100
                             таблеток
                           </p>
-                          <div class="second-block__item__price-block reviews">
+                          <div class="second-block__item__price-block reiews">
                             <p class="second-block__item__price fz-18px">
                               444 руб.
                             </p>
@@ -633,13 +645,17 @@
                   </div>
                 </div>
               </div>
+              <div
+                class="swiper-button-prev swiper-button main-content__swiper-button-prev"
+              >
+                <div></div>
+              </div>
+              <div
+                class="swiper-button-next swiper-button main-content__swiper-button-next"
+              >
+                <div class="svg"></div>
+              </div>
             </section>
-            <div
-              class="slider-arrows header__bottom__slider-arrows main-content__slider-arrows"
-            >
-              <button type="button" class="svg prev"></button>
-              <button type="button" class="svg next"></button>
-            </div>
           </div>
         </section>
         <section class="capabilities">
@@ -2133,7 +2149,8 @@
         </div>
       </footer>
     </div>
-    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+
+    <script src="./js/swiper-bundle.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

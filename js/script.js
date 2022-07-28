@@ -214,4 +214,64 @@ document.addEventListener("DOMContentLoaded", () => {
       slide();
     });
   });
+
+  /******************* swiper **************** */
+  let swMainContent = new Swiper(".main-top-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    // loop: true,
+    loopedSlides: 5, //looped slides should be the same
+    autoHeight: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1201: {
+        slidesPerView: 2,
+      },
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  let swHeaderBottom = new Swiper(".header-bottom__desktop", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    // loop: true,
+    loopedSlides: 5, //looped slides should be the same
+    autoHeight: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 9,
+      },
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 });
