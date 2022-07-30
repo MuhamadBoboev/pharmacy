@@ -1,0 +1,179 @@
+@media (max-width: 960px) {
+  .popup__text {
+    font-size: 21px;
+  }
+  .popup__close {
+    top: 5px;
+    right: 5px;
+  }
+}
+@media (max-width: 960px) {
+  .popup__content {
+    // padding: 10px;
+  }
+  .popup__text {
+    font-size: 18px;
+  }
+}
+
+/* ********************* request *********************** */
+
+/* ********* new-popup ********** */
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 12;
+  overflow-y: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__request.opens {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+}
+.popup__request.opens .popup__content__request {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+.popup__content {
+  color: black;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, -100%);
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  -webkit-box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
+  -moz-box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
+  box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
+  border-radius: 15px;
+}
+.popup-new {
+  width: max-content;
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  background-color: $colorWhite;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.popup-new__body {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.popup-new__top {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-new__title {
+  @include fontRalewayBold(18px, 110%);
+  color: $colorBlack;
+}
+.popup-new__close__svg {
+  width: 12px;
+  height: 12px;
+  padding: 10px;
+  background-image: url(../img/svg/Close.svg);
+  background-repeat: no-repeat;
+}
+.popup-new__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "n n e  e" "t t t t" "b bt bt bt";
+  grid-gap: 20px;
+  .popup-new__input {
+    padding: 17px 20px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+  }
+  .popup-new__block-name {
+    grid-area: n;
+  }
+  .popup-new__block-email {
+    grid-area: e;
+  }
+  .popup-new__block-text {
+    grid-area: t;
+  }
+  .popup-new__bottom-block {
+    grid-area: b;
+  }
+  .popup-new__bottom-block__text {
+    grid-area: bt;
+  }
+}
+.popup-new__input {
+}
+.popup-new__bottom-block__text {
+  display: flex;
+  align-items: center;
+}
+.popup-new__bottom-text {
+  font-size: 12px;
+  max-width: 330px;
+}
+.popup-new__bottom-span {
+  color: $BGButton;
+}
+
+@media (max-width: 768px) {
+  .popup {
+  }
+  .popup__block-body__request {
+    padding: 50px 10px 20px;
+  }
+  .popup-new__text {
+    font-size: 14px;
+  }
+  .popup-new {
+    padding-top: 180px;
+  }
+  .popup-new__body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .popup-new__form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "n n"
+      "e e"
+      "t t"
+      "bt bt"
+      "b b";
+    grid-gap: 20px;
+  }
+  .popup-new__bottom-block__text {
+    display: flex;
+    justify-content: center;
+  }
+  .popup-new__bottom-text {
+    max-width: 100%;
+  }
+}

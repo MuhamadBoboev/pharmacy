@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".header__burger");
   const menu = document.querySelector(".header-mobile__menu");
+  const body = document.body;
   burger.addEventListener("click", (e) => {
     menu.classList.toggle("active");
     burger.classList.toggle("active");
@@ -215,6 +216,67 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* *************** popup ****************** */
+
+  function popup(popupElement) {
+    // const popupFunction = document.querySelector(".${popupElement}");
+    const popupLinks = document.querySelectorAll(".popup-link");
+    const popupRequestButton = document.querySelectorAll(".popup-request");
+    const lockPadding = document.querySelectorAll(".lock-padding");
+
+    popupLinks.forEach(function (e) {
+      e.addEventListener("click", function () {
+        let popupElement = document.querySelector(".popup__first");
+        // let headerBlock = document.querySelector(".header_container");
+        let html = document.documentElement;
+        let marginSize = window.innerWidth - html.clientWidth;
+        let popupClose = popup.querySelector("#popupClose");
+        // let text = popup.querySelector("[data-text-send]");
+
+        body.style.paddingRight = marginSize + "px";
+        // headerBlock.style.marginLeft = 18 + "px";
+        // headerBlock.style.marginRight = 18 + "px";
+        body.style.overflow = "hidden";
+
+        popup.classList.add("open");
+        // text.innerText = e.innerText;
+
+        popupClose.addEventListener("click", function () {
+          popup.classList.remove("open");
+          body.style.overflow = "auto";
+          body.style.paddingRight = 0 + "px";
+          headerBlock.style.margin = 0 + " auto";
+        });
+      });
+    });
+    popupRequestButton.forEach(function (e) {
+      e.addEventListener("click", function () {
+        // let headerBlock = document.querySelector(".header_container");
+        let html = document.documentElement;
+        let marginSize = window.innerWidth - html.clientWidth;
+
+        let popupClose = popupRequest[0].querySelector(".popup__close");
+
+        body.style.paddingRight = marginSize + "px";
+        // headerBlock.style.marginLeft = 18 + "px";
+        // headerBlock.style.marginRight = 18 + "px";
+        body.style.overflow = "hidden";
+        console.log(popupClose);
+        popupRequest[0].classList.add("opens");
+
+        popupClose.addEventListener("click", function () {
+          popupRequest[0].classList.remove("opens");
+
+          body.style.overflow = "auto";
+          body.style.paddingRight = 0 + "px";
+          headerBlock.style.margin = 0 + " auto";
+          popupRequest[0].classList.remove("opens");
+        });
+      });
+    });
+  }
+  popup();
+
   /******************* swiper **************** */
   let swMainContent = new Swiper(".main-top-swiper", {
     slidesPerView: 1,
@@ -350,9 +412,9 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 6,
       },
     },
-    mousewheel: {
-      sensitivity: 1,
-    },
+    // mousewheel: {
+    //   sensitivity: 1,
+    // },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -395,7 +457,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sensitivity: 1,
     },
     pagination: {
-      el: ".swiper-pagination-capabilities",
+      el: ".swiper-pagination",
       clickable: true,
     },
     observer: true,

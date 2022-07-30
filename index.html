@@ -18,17 +18,49 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <form action="https://echo.htmlacademy.ru" method="post" id="popupRequest" class="popup popup__request dipla-none">
+        <div class="popup-new ">
+          <div class="popup-new__body" >
+            <div class="popup-new__top ">
+              <p class="popup-new__title" >Мы вам напишем</p>
+            <a href="#" id=""  class="popup__close close-popup close-popup_request popup-new__close" >
+              <div class='svg popup-new__close__svg' ></div>
+            </a>
+            </div>
+            <p class="popup-new__text" >Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам  </p>
+            <div class="popup-new__form" >
+               <div class="popup-new__block-name">
+                <input class="popup-new__input popup-new__input-name" type="text" id="name" placeholder="Ваше имя" ></input>
+               </div>
+               <div class="popup-new__block-email">
+                <input class="popup-new__input popup-new__input-email" type="text" id="email" placeholder="Ваша почта" ></input>
+               </div>
+               <div class="popup-new__block-text">
+                <input class="popup-new__input popup-new__input-text" type="text" id="text" placeholder="Отпишите свою проблему" ></input>
+               </div>
+               <div class="popup-new__bottom-block" >
+                <button type='submit' class="popup-request button popup-new__button" >Напишите мне</button>
+              </div>
+              <div class="popup-new__bottom-block__text" >
+                <p class="popup-new__bottom-text" >Нажимая на кнопку, вы соглашаетесь на обработку <u><a href='#' class="popup-new__bottom-span" >персональных данных</a></u></p>
+              </div>
+
+          </div>
+        </div>
+        </div>
+      </form>
+
+      <header class="header ">
         <div class="header__top">
           <div class="_container header_container">
             <div class="header__top__flex">
               <div class="header__top__flex__block">
-                <a class="header__top__block">
+                <a class="popup-request  header__top__block">
                   <div class="header__city__svg header__city__svg__1"></div>
                   <span class="header__city__text">Москва и область</span>
                   <div class="header__city__sign"></div>
                 </a>
-                <a class="header__top__block">
+                <a class="header__top__block header__top__block_2">
                   <div class="header__city__svg header__city__svg__2"></div>
                   <span class="header__city__text">Служебные страницы</span>
                 </a>
@@ -228,16 +260,16 @@
           </div>
         </div>
       </header>
-      <header class="header header_mobile">
+      <header class="header header_mobile ">
         <div class="header__top">
           <div class="_container header_container">
             <div class="header__top__flex">
               <div class="header__top__flex__block">
-                <a class="header__top__block">
+                <a href="#" class="popup-request header__top__block">
                   <div class="header__city__svg header__city__svg__1"></div>
                   <span class="header__city__text">Москва и область</span>
                 </a>
-                <a class="header__top__block">
+                <a href="#" class="header__top__block">
                   <div class="header__city__svg header__city__svg__2"></div>
                   <span class="header__city__text">Служебные страницы</span>
                 </a>
@@ -478,7 +510,7 @@
       </header>
 
       <main class="main">
-        <section class="main-content">
+        <section class="main-content ">
           <div class="_container main_container">
             <section
               class="main__main-content swiper-container main-top-swiper"
@@ -658,8 +690,7 @@
             </section>
           </div>
         </section>
-
-        <section class="capabilities">
+        <section class="capabilities ">
           <div class="_container capabilities_container">
             <div class="sli">
               <div class="swiper-container swiper-capabilities">
@@ -785,14 +816,12 @@
                     </a>
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
-              <div
-                class="swiper-pagination swiper-pagination-capabilities"
-              ></div>
             </div>
           </div>
         </section>
-        <section class="product">
+        <section class="product ">
           <div class="_container product_container">
             <div class="product__body">
               <h2 class="main-title">Акция месяца</h2>
@@ -1101,13 +1130,13 @@
                     </div>
                   </a>
                 </div>
-                <div class="swiper-wrapper__buttons">
-                  <div class="product-cards__prev swiper-button-prev">
-                    <div class="svg"></div>
-                  </div>
-                  <div class="product-cards__next swiper-button-next">
-                    <div class="svg"></div>
-                  </div>
+              </div>
+              <div class="swiper-wrapper__buttons">
+                <div class="product-cards__prev swiper-button-prev">
+                  <div class="svg"></div>
+                </div>
+                <div class="product-cards__next swiper-button-next">
+                  <div class="svg"></div>
                 </div>
               </div>
               <div
@@ -1419,7 +1448,7 @@
             </div>
           </div>
         </section>
-        <section class="working">
+        <section class="working ">
           <div class="_container capabilities_container">
             <h2 class="main-title">Как мы работаем?</h2>
 
@@ -1529,7 +1558,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews ">
           <div class="_container reviews_container">
             <div class="reviews__body">
               <div class="reviews__reviews-left">
@@ -1640,7 +1669,7 @@
             </div>
           </div>
         </section>
-        <section class="partners">
+        <section class="partners ">
           <div class="_container product_container">
             <div class="product__body partners__body">
               <h2 class="main-title">Наши партнеры</h2>
@@ -1781,31 +1810,24 @@
                     </a>
                   </div>
                 </div>
-                <div class="swiper-wrapper__buttons">
-                  <div class="product-cards__prev swiper-button-prev">
-                    <div class="svg"></div>
-                  </div>
-                  <div class="product-cards__next swiper-button-next">
-                    <div class="svg"></div>
-                  </div>
+              </div>
+
+              <div class="swiper-wrapper__buttons">
+                <div
+                  class="product-cards__prev swiper-button-prev swiper-button-disabled"
+                >
+                  <div class="svg"></div>
+                </div>
+                <div
+                  class="product-cards__next swiper-button-next swiper-button-disabled"
+                >
+                  <div class="svg"></div>
                 </div>
               </div>
             </div>
-            <div
-              class="slider-arrows header__bottom__slider-arrows product-cards__slider-arrows"
-            >
-              <button
-                type="button"
-                class="svg prev product-cards__prev"
-              ></button>
-              <button
-                type="button"
-                class="svg next product-cards__next"
-              ></button>
-            </div>
           </div>
         </section>
-        <section class="company">
+        <section class="company ">
           <div class="_container">
             <h2 class="main-title">О компании</h2>
             <div class="company__body">
@@ -1918,6 +1940,886 @@
                   <p class="reviews__href__text">Показать весь текст</p>
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-filter" >
+          <div class="_container product-filter_container" >
+            <div class="product-filter__body" >
+              <div class="product-filter__top" >
+                <p class="main-title" >Поиск по алфавиту</p>
+                <a href="#" class="product-filter__suptitle" >Выбор товара по заболеванию  </a>
+              </div>
+              <div class="product-filter__alphabet" >
+                <div class="alphabet__content" >
+                  <div class="alphabet__items alphabet__ru" >
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        a
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        б
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        в
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        г
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        д
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        е
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ё
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ж
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        з
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        и
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        й
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        к
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        л
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        м
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        н
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        о
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        п
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        р
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        с
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        т
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        у
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ф
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        х
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ц
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ч
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ш
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        щ
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ъ
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ы
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ь
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        з
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        ю
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__ru__item" >
+                        я
+                      </p>
+                    </a>
+
+                  </div>
+                  <div class="alphabet__items alphabet__en" >
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          a
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          b
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          c
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          d
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          e
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          f
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          g
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          h
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          a
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          i
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          j
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          k
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          l
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          m
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          n
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          o
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          p
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          q
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          r
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          s
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          t
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          u
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          v
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          w
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          x
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          y
+                        </p>
+                      </a>
+                      <a href="#" class="alphabet__item" >
+                        <p class="alphabet__item__body alphabet__en__item" >
+                          z
+                        </p>
+                      </a>
+
+                  </div>
+                  <div class="alphabet__items alphabet__number" >
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        0
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        1
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        2
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        3
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        4
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        5
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        6
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        7
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        8
+                      </p>
+                    </a>
+                    <a href="#" class="alphabet__item" >
+                      <p class="alphabet__item__body alphabet__en__item" >
+                        9
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="alphabet__big-number" >
+                  <p class="alphabet__big-number__text" >
+                    а-я
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="product-filter__blocks">
+              <div class="product-filter__block product-filter__block-1">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-1">
+                    </div>
+                    <p class="product-filter__block__body__title" >Лекарства</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Акушерство, гинекология
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Аллергия
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Анестезия, реанимация
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Антибиотики
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Болезни крови
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Боль, температура
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Геморрой
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Глаза
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Глисты, вши, чесотка
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Гомеопатия
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Аллергия
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Диабет
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Диагностические средства
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Дыхательная система
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Желудок, кишечник, печень
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Зубы и рот
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Иммунная система
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Кожа
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Мочеполовая система
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Нарушения обмена веществ
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Неврология, психиатрия
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Обеззараживающие средства
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Онкология
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Отравления
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Питательные смеси
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противовирусные средства
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противогрибковые средства
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Разное
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="product-filter__block product-filter__block-2">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-2">
+                    </div>
+                    <p class="product-filter__block__body__title" >Витамины и БАД</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Аминокислоты
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">L-карнитин
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Антиоксиданты
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД для зрения
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Поливитамины
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД вредные привычки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД для коррекции веса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД при диабете
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД при климаксе
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД при простуде
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД седативные
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Витамины и минералы
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Витамины для беременных и кормящих
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД при диабете
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД при климаксе
+                      </a>
+                    </li>
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">БАД при простуде
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter__block product-filter__block-3">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-3">
+                    </div>
+                    <p class="product-filter__block__body__title" >Красота</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для дома
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для офиса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Декоративные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противопожарные перегородки
+                      </a>
+                    </li>
+
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter__block product-filter__block-4">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-4">
+                    </div>
+                    <p class="product-filter__block__body__title" >Гигиена</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для дома
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для офиса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Декоративные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противопожарные перегородки
+                      </a>
+                    </li>
+
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter__block product-filter__block-5">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-5">
+                    </div>
+                    <p class="product-filter__block__body__title" >Медтовары</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для дома
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для офиса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Декоративные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противопожарные перегородки
+                      </a>
+                    </li>
+
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter__block product-filter__block-6">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-6">
+                    </div>
+                    <p class="product-filter__block__body__title" >Зоотовары</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для дома
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для офиса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Декоративные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противопожарные перегородки
+                      </a>
+                    </li>
+
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter__block product-filter__block-7">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-7">
+                    </div>
+                    <p class="product-filter__block__body__title" >Мать и дитя</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для дома
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для офиса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Декоративные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противопожарные перегородки
+                      </a>
+                    </li>
+
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter__block product-filter__block-8">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-8">
+                    </div>
+                    <p class="product-filter__block__body__title" >Лизны</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для дома
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для офиса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Декоративные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противопожарные перегородки
+                      </a>
+                    </li>
+
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter__block product-filter__block-9">
+                <div class="product-filter__block__body">
+                  <div class="product-filter__block__top" >
+                    <div class="svg product-filter__svg product-filter__svg-9">
+                    </div>
+                    <p class="product-filter__block__body__title" >Медтехника</p>
+                  </div>
+                  <ul class="product-filter__ul">
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для дома
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки для офиса
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Стеклянные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Декоративные перегородки
+                      </a>
+                    </li>
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link">Противопожарные перегородки
+                      </a>
+                    </li>
+
+
+                    <li class="product-filter__li">
+                      <a href="#" class="product-filter__link product-filter__link__last">
+                        <div class="svg product-filter__link__last__svg" > </div>
+                        Все категории
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -2166,7 +3068,44 @@
           </div>
         </div>
       </footer>
-    </div>
+      <form action="https://echo.htmlacademy.ru" method="post" id="popupRequest" class="popup__first popup popup__request">
+        <svg display="none" >
+          <symbol id="popupR" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1L7 7.00005M7 7.00005L1.0001 13M7 7.00005L1 1M7 7.00005L12.9999 13" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          </symbol>
+        </svg>
+        <div class="popup__body popup__body__request">
+          <div class="popup__content popup__content__request">
+            <a id="popupClose" href="#popupClose" class="popup__close close-popup close-popup_request">
+              <svg width="14" height="14" viewBox="0 0 14 14">
+                <use xlink:href="#popupR"></use>
+              </svg>
+            </a>
+            <div class="popup__text popup__block-body__request">
+              <p class="request-text">Оставьте <span class="request-text_red" >заявку</span> и мы<br> вам <span class="request-text_red" >Перезвоним</span>
+              <div class="request__block-inputs">
+                <div class="request__block-input request__input-name">
+                  <input class="request__input" type="text" placeholder="Имя" name="name " id="name" required >
+                </div>
+                <div class="request__block-input request__input-number">
+                  <input class="request__input" pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" size="13" type="text" title="Введите в таком формате: +7 999 999 99 99" placeholder="Телефон" name="phoneNumber:" >
+                </div>
+                <div class="request__block-input request__input-text">
+                  <input class="request__input" type="text" placeholder="E-mail" name="mail" id="mail" required >
+                </div>
+                <div class="request__block-input request__block-button">
+                  <button type="submit" class="request__input button button_popup">Перезвоните мне</button>
+                  <p class="request__footer-text">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных
+                    данных и соглашаетесь c политикой конфиденциальности
+                  </p>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+      </form>
+
 
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/script.js"></script>

@@ -88,8 +88,8 @@
   width: 46px;
   height: 46px;
 
-  top: 80%;
-  display: flex;
+  top: 77%;
+  display: none;
   justify-content: center;
   align-items: center;
   div {
@@ -100,6 +100,9 @@
   }
   &::after {
     content: none;
+  }
+  @media (max-width: 960px) {
+    display: flex;
   }
 }
 .main-content__swiper-button-prev {
@@ -391,6 +394,9 @@
     background-image: url(../img/main-content/capabilities-5.png);
   }
 }
+// .capabilities_container {
+//   position: relative;
+// }
 .capabilities__info {
   display: flex;
   flex-direction: column;
@@ -432,6 +438,9 @@
 }
 .product__body {
   margin-top: 10px;
+}
+.product_container {
+  position: relative;
 }
 .product__product-cards {
   @include grid(1fr 1fr 1fr 1fr 1fr, 1fr);
@@ -598,9 +607,9 @@
   right: 0;
   width: 100px;
   height: 40px;
-  top: 3px;
+  top: 0px;
   z-index: 1;
-  left: 70%;
+  left: 71%;
 }
 .product-cards__prev {
   display: flex;
@@ -688,7 +697,7 @@
     top: 150px;
   }
   .working {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
 .how-working__blocks {
