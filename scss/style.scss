@@ -70,8 +70,12 @@ div {
 
 @import "main-content.scss";
 @import "product-filter.scss";
+
+@import "categories.scss";
+
 @import "footer.scss";
 @import "font-size.scss";
+
 .font {
   // @include fontBold(15px, 21px);
 }

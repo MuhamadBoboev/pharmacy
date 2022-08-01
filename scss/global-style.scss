@@ -147,3 +147,30 @@
   border: 1px solid $BGButton;
   margin-left: 10px;
 }
+
+.page__title {
+  margin-top: 20px;
+}
+.section__title {
+  @include fontRalewayBold(14px, 110%);
+  color: $colorBlack;
+  text-transform: uppercase;
+}
+.line__top-bottom {
+  position: relative;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 113%;
+    height: 1px;
+    background-color: #f5f5f5;
+    left: -7%;
+  }
+  &::after {
+    top: 0;
+  }
+  &::before {
+    bottom: 0;
+  }
+}
