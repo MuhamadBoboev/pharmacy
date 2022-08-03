@@ -1,0 +1,294 @@
+.product-page {
+  margin-top: 10px;
+}
+.product-page__pp-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.pp-content__top {
+  @include grid(1fr 1fr 1fr 1fr, 1fr);
+  grid-gap: 30px;
+  background: #f7fafb;
+  border-radius: 5px;
+}
+.pp-content__item {
+  text-align: center;
+  padding: 22px 0;
+  @include fontRalewayBold(14px, 100%);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+}
+.pp-content__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d9e7ec;
+  border-radius: 5px 5px 0px 0px;
+}
+.pp-content__main {
+  display: flex;
+  grid-gap: 30px;
+}
+.pp-content__item:active::after,
+.pp-content__item:hover::after {
+  background-color: #f2c94c;
+}
+.pp-content__item_1::after {
+  background-color: #f2c94c;
+}
+.img-bl__items {
+  height: 410px;
+}
+.img-bl__container {
+  margin: 0;
+  padding: 0;
+}
+.pp-content__img-bl {
+  display: flex;
+  grid-gap: 30px;
+}
+.img-bl__item {
+  height: 150px;
+  cursor: pointer;
+}
+
+.img-bl__big-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 457px;
+  height: 457px;
+  position: relative;
+  border: 1px solid #e7e9eb;
+  border-radius: 5px;
+}
+.img-bl__big-img__p {
+  width: 100%;
+  height: 100%;
+}
+.img-bl__big-img__block {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-bl__big-img::after {
+  content: "Товар дня";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  width: -moz-max-content;
+  width: max-content;
+  height: max-content;
+  font-family: "Roboto-Regular";
+  font-size: 12px;
+  line-height: 110%;
+  font-weight: 400;
+  background-color: #2fd3ae;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.img-bl__big-img::before {
+  content: "Только самовывоз!";
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  padding: 5px 10px;
+  width: max-content;
+  height: max-content;
+  font-family: "Roboto-Regular";
+  font-size: 12px;
+  line-height: 110%;
+  font-weight: 400;
+  background-color: #2d9cdb;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.img-bl__big-img__block {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.pp-content__pp-info {
+  @include grid(1fr 300px, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+}
+.pp-info__characteristic {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.characteristic__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.characteristic__top {
+  display: flex;
+  grid-gap: 30px;
+  p {
+    // margin-left: 25px;
+  }
+}
+.product-card__top {
+  display: flex;
+  grid-gap: 30px;
+  align-items: baseline;
+}
+.characteristic__reviews__vendor-code {
+  color: $colorBlack;
+  margin-left: 10px;
+}
+.characteristic__content {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.section__title {
+}
+.characteristic__ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  li:nth-child(odd) {
+    background-color: #f7fafb;
+  }
+}
+.characteristic__li {
+  padding: 10px 0;
+  padding-left: 34px;
+
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #f2c94c;
+    left: 20px;
+    top: 16px;
+    border-radius: 50%;
+  }
+}
+.characteristic__reviews__vendor-code {
+}
+.pp-content__pp-right-card {
+  border: 1px solid #e7e9eb;
+  border-radius: 5px;
+  height: max-content;
+}
+.pp-right-card__body {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+.pp-right-card__body__item-top {
+  background-color: #f7fafb;
+  padding: 18px;
+}
+.product-card__price-block {
+}
+.product-card__price {
+}
+.product-card__price__1 {
+}
+.fz-24px {
+}
+.product-card__price__2 {
+}
+.fz-14px {
+}
+.svg {
+}
+.product-card__busket {
+}
+.counter-busket {
+  display: flex;
+  grid-gap: 10px;
+  padding: 18px;
+}
+.counter {
+}
+.counter__numer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0px 20px;
+  box-shadow: 0px 0px 40px rgba(11, 54, 29, 0.1);
+  border-radius: 50px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "-";
+    top: 15px;
+    font-size: 18px;
+    color: $colorWhite;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #dd8888;
+  }
+  &::before {
+    position: absolute;
+    content: "+";
+    display: flex;
+    justify-content: center;
+    top: 15px;
+    font-size: 18px;
+    color: $colorWhite;
+    text-align: center;
+    right: -13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $BGButton;
+  }
+}
+.button {
+}
+.counter__butten {
+  P {
+    width: max-content;
+  }
+}
+.buscet__button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 17px;
+  margin: 18px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  border: 1px solid #71c376;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #525a68;
+  @include fontRalewayBlack(14px, 100%);
+}
