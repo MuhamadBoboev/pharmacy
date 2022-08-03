@@ -7,6 +7,7 @@
 .button {
   @include fontRalewayBold(14px, 110%);
   color: $colorWhite;
+  cursor: pointer;
   text-transform: uppercase;
   padding: 17px 41px;
   background-color: $BGButton;
@@ -14,6 +15,10 @@
   border: none;
   box-shadow: 0px 5px 10px rgba(47, 211, 174, 0.1);
   border-radius: 50px;
+}
+p,
+a {
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .img {
   max-width: 100%;

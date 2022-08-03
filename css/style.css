@@ -140,6 +140,7 @@ div {
   line-height: 110%;
   font-weight: 700;
   color: white;
+  cursor: pointer;
   text-transform: uppercase;
   padding: 17px 41px;
   background-color: #2fd3ae;
@@ -148,6 +149,12 @@ div {
   -webkit-box-shadow: 0px 5px 10px rgba(47, 211, 174, 0.1);
           box-shadow: 0px 5px 10px rgba(47, 211, 174, 0.1);
   border-radius: 50px;
+}
+
+p,
+a {
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .img {
@@ -5217,6 +5224,16 @@ div {
 }
 
 .pp-content__pp-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pp-content__pp-info__content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 30px 300px;
@@ -5227,12 +5244,12 @@ div {
   width: 100%;
 }
 
-.pp-content__pp-info > *:nth-child(1) {
+.pp-content__pp-info__content > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
 
-.pp-content__pp-info > *:nth-child(2) {
+.pp-content__pp-info__content > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
@@ -5374,6 +5391,7 @@ div {
 }
 .counter__numer::after {
   position: absolute;
+  cursor: pointer;
   content: "-";
   top: 15px;
   font-size: 18px;
@@ -5393,6 +5411,7 @@ div {
 }
 .counter__numer::before {
   position: absolute;
+  cursor: pointer;
   content: "+";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5437,6 +5456,147 @@ div {
   font-size: 14px;
   line-height: 100%;
   font-weight: 900;
+}
+
+.pp-content__pp-info__pp-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pp-bottom__pp-button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 5px;
+}
+
+.pp-button-block__link {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.pp-button-block__link_1 {
+  border: 1px solid #e7e9eb;
+  border-radius: 5px;
+  position: relative;
+}
+.pp-button-block__link_1::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0px;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
+.pp-button-block__pp-block-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  border: 1px solid #e7e9eb;
+  border-radius: 5px;
+}
+
+.pp-button-block__pp-block-1 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.pp-button-block__pp-block-1 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.pp-button-block__pp-block-1 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.pp-block-1__body {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 15px;
+}
+
+.pp-block-1__body_1 {
+  padding-left: 60px;
+}
+
+.pp-block-1__body__text {
+  font-family: "Roboto-Medium";
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+  position: relative;
+  color: #333333;
+}
+
+.pp-block-1__body__text::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -40px;
+  background-position: center;
+  background-image: url(../img/svg/error_outline.svg);
+  background-repeat: no-repeat;
+}
+
+.pp-block-1__body__text_1::after {
+  background-color: #2d9cdb;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.favorite_border {
+  cursor: pointer;
+  background-color: white;
+  background-image: url(../img/svg/favorite_border.svg);
+}
+
+.pp-block-1__body__text_2::after {
+  background-image: url(../img/svg/Vector-1+1.svg);
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: -20px;
+}
+
+.pp-block-1__body__text-bottom {
+  line-height: 130%;
+  font-size: 12px;
+}
+
+.pp-block-1__body__text_1 {
+  color: #2d9cdb;
+}
+
+.pp-block-1__body__text__span {
+  font-weight: 700;
+}
+
+.pp-block-2__body {
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  line-height: 110%;
+  font-weight: 400;
+  padding: 30px 25px;
+  color: #828282;
 }
 
 .footer {
