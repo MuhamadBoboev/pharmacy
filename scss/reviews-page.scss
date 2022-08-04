@@ -1,0 +1,77 @@
+.reviews-page {
+  margin-top: 40px;
+}
+.reviews-page__body {
+  @include grid(360px 1fr, max-content);
+  grid-gap: 30px;
+}
+.rp-left__body {
+  background-color: #f7fafb;
+}
+.rp-left__bottom {
+  padding: 45px 30px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+.reviews-page__rp-right {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.review__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rb__flex {
+  display: flex;
+  grid-gap: 30px;
+}
+.rp-left__srars {
+  display: flex;
+  grid-gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+  width: max-content;
+}
+.rp-left__reviews {
+  @include fontRobotoRegular(13px, 100%);
+  color: $colorBlack;
+}
+.rp-left__input {
+  position: relative;
+  cursor: pointer;
+  background-color: red;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    left: -1px;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #e7e9eb;
+    border-radius: 5px;
+  }
+  &:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid $BGButton;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: 5px;
+  }
+}
+.reviews_feedback__body {
+  padding: 30px 220px;
+}

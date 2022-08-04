@@ -188,6 +188,17 @@
   width: 12px;
   height: 12px;
 }
+
+.star-big {
+  background-image: url(../img/svg/star-big.svg);
+  width: 24px;
+  height: 24px;
+}
+.star-big__minus {
+  background-image: url(../img/svg/star-big__minus.svg);
+  width: 24px;
+  height: 24px;
+}
 .main-content__slider-arrows {
   background: none;
   display: none;
@@ -463,6 +474,9 @@
 }
 .product-card__img {
   position: relative;
+  img {
+    max-height: 160px;
+  }
 }
 .product-card__img::after {
   content: "Товар дня";
@@ -502,6 +516,10 @@
 .product-card__available {
   color: $BGButton;
   @include fontRobotoBold(12px, 110%);
+}
+.stars {
+  display: flex;
+  grid-gap: 10px;
 }
 .product-card__start {
   grid-gap: 5px;

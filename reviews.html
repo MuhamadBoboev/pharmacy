@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+
+    <title>Отзывы </title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form action="https://echo.htmlacademy.ru" method="post" id="popupRequest" class="popup popup__request dipla-none">
+        <div class="popup-new ">
+          <div class="popup-new__body" >
+            <div class="popup-new__top ">
+              <p class="popup-new__title" >Мы вам напишем</p>
+            <a href="#" id=""  class="popup__close close-popup close-popup_request popup-new__close" >
+              <div class='svg popup-new__close__svg' ></div>
+            </a>
+            </div>
+            <p class="popup-new__text" >Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам  </p>
+            <div class="popup-new__form" >
+               <div class="popup-new__block-name">
+                <input class="popup-new__input popup-new__input-name" type="text" id="name" placeholder="Ваше имя" ></input>
+               </div>
+               <div class="popup-new__block-email">
+                <input class="popup-new__input popup-new__input-email" type="text" id="email" placeholder="Ваша почта" ></input>
+               </div>
+               <div class="popup-new__block-text">
+                <input class="popup-new__input popup-new__input-text" type="text" id="text" placeholder="Отпишите свою проблему" ></input>
+               </div>
+               <div class="popup-new__bottom-block" >
+                <button type='submit' class="popup-request button popup-new__button" >Напишите мне</button>
+              </div>
+              <div class="popup-new__bottom-block__text" >
+                <p class="popup-new__bottom-text" >Нажимая на кнопку, вы соглашаетесь на обработку <u><a href='#' class="popup-new__bottom-span" >персональных данных</a></u></p>
+              </div>
+
+          </div>
+        </div>
+        </div>
+      </form>
+
+      <header class="header ">
+        <div class="header__top">
+          <div class="_container header_container">
+            <div class="header__top__flex">
+              <div class="header__top__flex__block">
+                <a class="popup-request  header__top__block">
+                  <div class="header__city__svg header__city__svg__1"></div>
+                  <span class="header__city__text">Москва и область</span>
+                  <div class="header__city__sign"></div>
+                </a>
+                <a class="header__top__block header__top__block_2">
+                  <div class="header__city__svg header__city__svg__2"></div>
+                  <span class="header__city__text">Служебные страницы</span>
+                </a>
+              </div>
+              <div class="header__top__flex__block">
+                <a class="header__top__block">
+                  <span class="header__city__text">Избранное</span>
+                  <div class="header__city__svg header__city__svg__3"></div>
+                </a>
+                <a class="header__top__block">
+                  <span class="header__city__text">Личный кабинет</span>
+                  <div class="header__city__svg header__city__svg__4"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="_container header_container">
+          <div class="header__body">
+            <a href="./index.html" class="logo">
+              <div class="svg logo__svg"></div>
+              <div class="logo__text">
+                <p class="logo__title">
+                  <span class="logo__title__span"> Аптека.</span>
+                  онлайн
+                </p>
+                <p class="logo__suptitle">Ваша онлайн аптека</p>
+              </div>
+            </a>
+            <div class="header__block__search">
+              <div class="header__messages">
+                <a href="#" class="svg header__message header__message-1"></a>
+                <a href="#" class="svg header__message header__message-2"></a>
+                <a href="#" class="svg header__message header__message-3"></a>
+              </div>
+              <div class="header__contacts">
+                <div class="header__contact__item">
+                  <a href="tel:89169480428" class="header__contact">
+                    <div
+                      class="svg header__contact__svg header__contact__svg__email"
+                    ></div>
+                    <p class="header__contact__title">info@restoll.ru</p>
+                    <p class="header__contact__suptitle">Напишите нам</p>
+                  </a>
+                </div>
+                <div class="header__contact__item">
+                  <a href="tel:88007772223" class="header__contact">
+                    <div class="svg header__contact__svg"></div>
+                    <p class="header__contact__title">8-800-777-22-33</p>
+                    <p class="header__contact__suptitle">Напишите нам</p>
+                  </a>
+                </div>
+                <div class="header__contact__item">
+                  <a href="tel:87952233403" class="header__contact">
+                    <div class="svg header__contact__svg"></div>
+                    <p class="header__contact__title">8 (495) 223-34-03</p>
+                    <p class="header__contact__suptitle">Интернет-аптека</p>
+                  </a>
+                </div>
+              </div>
+              <div class="header__search">
+                <div></div>
+              </div>
+            </div>
+            <div class="header__tell">
+              <a
+                href="#"
+                class="svg header__tell-svg header__search-button"
+              ></a>
+              <div class="header__search-button header__search-1024px">
+                <input
+                  class="header__search-1024px__input"
+                  placeholder="Начинайте писать или введите название товара..."
+                />
+              </div>
+              <button type="button" class="button">Заказать звонок</button>
+              <a href="#" class="svg header__tell-svg header__basket"></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__catalogs">
+          <div class="_container header_container">
+            <div class="header__catalogs__body">
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-1"
+                ></div>
+                <div class="header__catalog__text">Лекарства</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-2"
+                ></div>
+                <div class="header__catalog__text">Витамины и БАД</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-3"
+                ></div>
+                <div class="header__catalog__text">КРАСОТА</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-4"
+                ></div>
+                <div class="header__catalog__text">ГИГИЕНА</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-5"
+                ></div>
+                <div class="header__catalog__text">ЛИНЗЫ</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-6"
+                ></div>
+                <div class="header__catalog__text">МАТЬ И ДИТЯ</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-7"
+                ></div>
+                <div class="header__catalog__text">МЕДТОВАРЫ</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-8"
+                ></div>
+                <div class="header__catalog__text">ЗООТОВАРЫ</div>
+              </a>
+              <a href="#" class="header__catalog">
+                <div
+                  class="svg header__catalog__svg header__catalog__svg-9"
+                ></div>
+                <div class="header__catalog__text">МЕДТЕХНИКА</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="_container">
+            <div class="header__bottom-items">
+              <div class="slider">
+                <div class="slider-list grab header-bottom__desktop">
+                  <div class="slider-track">
+                    <div
+                      class="slide header__bottom-item header__bottom-item__first"
+                    >
+                      <a
+                        href="#"
+                        class="header__bottom-item__text header__bottom-item__first"
+                      >
+                        <span class="header__bottom-item__svg">%</span>Акция
+                      </a>
+                    </div>
+                    <div
+                      class="slide header__bottom-item header__bottom-item__second"
+                    >
+                      <a href="#" class="header__bottom-item__text">
+                        <span class="header__bottom-item__svg">₽</span>Скидки
+                      </a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">COVID-19</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Аллергия</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text"
+                        >Лечебная косметика</a
+                      >
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Кишечник</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text"
+                        >Молочница</a
+                      >
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Суставы</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Еще 52</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-arrows header__bottom__slider-arrows">
+                  <button type="button" class="svg prev"></button>
+                  <button type="button" class="svg next"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header class="header header_mobile ">
+        <div class="header__top">
+          <div class="_container header_container">
+            <div class="header__top__flex">
+              <div class="header__top__flex__block">
+                <a href="#" class="popup-request header__top__block">
+                  <div class="header__city__svg header__city__svg__1"></div>
+                  <span class="header__city__text">Москва и область</span>
+                </a>
+                <a href="#" class="header__top__block">
+                  <div class="header__city__svg header__city__svg__2"></div>
+                  <span class="header__city__text">Служебные страницы</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="_container header_container">
+          <div class="header__body">
+            <a href="#" class="svg header__tell-svg header__burger"></a>
+            <a href="./index.html" class="logo">
+              <div class="svg logo__svg"></div>
+              <div class="logo__text">
+                <p class="logo__title">
+                  <span class="logo__title__span"> Аптека.</span>
+                  онлайн
+                </p>
+                <p class="logo__suptitle">Ваша онлайн аптека</p>
+              </div>
+            </a>
+            <a href="#" class="svg header__tell-svg header__basket"></a>
+          </div>
+        </div>
+        <div class="header__contacts__block">
+          <button class="header__contacts__block__text active">
+            <div data-contact="1" class="header__contacts__block__text__active">
+              <div
+                class="svg header__contacts__block__svg header__contacts-1"
+              ></div>
+              Мы вам перезвоним
+            </div>
+            <div data-contact="2" class="header__contacts__block__text__active">
+              <div
+                class="svg header__contacts__block__svg header__contacts-2"
+              ></div>
+              Скрыть контакты
+            </div>
+          </button>
+          <!-- <p class="header__contacts__block ">Скрыть контакты</p> -->
+          <div class="header__mobile__contacts__active">
+            <div class="header__contacts">
+              <div class="header__contact__item">
+                <a href="tel:89169480428" class="header__contact">
+                  <div
+                    class="svg header__contact__svg header__contact__svg__email"
+                  ></div>
+                  <p class="header__contact__title">info@restoll.ru</p>
+                  <p class="header__contact__suptitle">Напишите нам</p>
+                </a>
+              </div>
+              <div class="header__contact__item">
+                <a href="tel:88007772223" class="header__contact">
+                  <div class="svg header__contact__svg"></div>
+                  <p class="header__contact__title">8-800-777-22-33</p>
+                  <p class="header__contact__suptitle">Напишите нам</p>
+                </a>
+              </div>
+              <div class="header__contact__item">
+                <a href="tel:87952233403" class="header__contact">
+                  <div class="svg header__contact__svg"></div>
+                  <p class="header__contact__title">8 (495) 223-34-03</p>
+                  <p class="header__contact__suptitle">Интернет-аптека</p>
+                </a>
+              </div>
+            </div>
+            <div class="header__messages">
+              <a href="#" class="svg header__message header__message-1"></a>
+              <a href="#" class="svg header__message header__message-2"></a>
+              <a href="#" class="svg header__message header__message-3"></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom header__bottom__condition">
+          <div class="_container">
+            <div class="header__bottom-items">
+              <div class="slider">
+                <div class="slider-list">
+                  <div class="slider-track">
+                    <div
+                      class="slide header__bottom-item header__bottom-item__first"
+                    >
+                      <a
+                        href="#"
+                        class="header__bottom-item__text header__bottom-item__first"
+                      >
+                        <span class="header__bottom-item__svg">%</span>Акция
+                      </a>
+                    </div>
+                    <div
+                      class="slide header__bottom-item header__bottom-item__second"
+                    >
+                      <a href="#" class="header__bottom-item__text">
+                        <span class="header__bottom-item__svg">₽</span>Скидки
+                      </a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">COVID-19</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Аллергия</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text"
+                        >Лечебная косметика</a
+                      >
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Кишечник</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text"
+                        >Молочница</a
+                      >
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Суставы</a>
+                    </div>
+                    <div class="slide slide__header_1 header__bottom-item">
+                      <a href="#" class="header__bottom-item__text">Еще 52</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-arrows header__bottom__slider-arrows">
+                  <button type="button" class="svg prev"></button>
+                  <button type="button" class="svg next"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-mobile__menu">
+          <div class="header-mobile__search">
+            <div class="header__search-button header__search-1024px">
+              <input class="header__search-1024px__input" />
+            </div>
+          </div>
+          <div class="header__catalogs">
+            <div class="header_container">
+              <ul class="header__catalogs__body">
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-1"
+                    ></div>
+                    <div class="header__catalog__text">Лекарства</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-2"
+                    ></div>
+                    <div class="header__catalog__text">Витамины и БАД</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-3"
+                    ></div>
+                    <div class="header__catalog__text">КРАСОТА</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-4"
+                    ></div>
+                    <div class="header__catalog__text">ГИГИЕНА</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-5"
+                    ></div>
+                    <div class="header__catalog__text">ЛИНЗЫ</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-6"
+                    ></div>
+                    <div class="header__catalog__text">МАТЬ И ДИТЯ</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-7"
+                    ></div>
+                    <div class="header__catalog__text">МЕДТОВАРЫ</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-8"
+                    ></div>
+                    <div class="header__catalog__text">ЗООТОВАРЫ</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-9"
+                    ></div>
+                    <div class="header__catalog__text">МЕДТЕХНИКА</div>
+                  </a>
+                </li>
+                <li class="header__catalog__li">
+                  <a href="#" class="header__catalog">
+                    <div
+                      class="svg header__catalog__svg header__catalog__svg-10"
+                    ></div>
+                    <div class="header__catalog__text">Весь каталог</div>
+                  </a>
+                </li>
+              </ul>
+              <div class="header__top__flex__block header__bottom__flex__block">
+                <a class="header__top__block">
+                  <div class="header__city__svg header__city__svg__3"></div>
+                  <span class="header__city__text header__city__text__bottom"
+                    >Избранное</span
+                  >
+                </a>
+                <a class="header__top__block">
+                  <div class="header__city__svg header__city__svg__4"></div>
+                  <span class="header__city__text header__city__text__bottom"
+                    >Личный кабинет</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main reviews-page__main">
+        <div class="page-titles" >
+          <div class="_container" >
+            <div class="page-titles__body">
+              <a href="./index.html" class="page-titles__link active" >
+                <div class="svg page-titles__svg page-titles__svg-1" ></div>
+                <p class="page-titles_text" >Главная</p>
+              </a>
+              <a href="./categories.html" class="page-titles__link" >
+                <div class="svg page-titles__svg page-titles__svg-2" ></div>
+                <p class="page-titles_text" >Отзывы о нас</p>
+              </a>
+            </div>
+            <div class="page__title" >
+              <div class="product-filter__top">
+                <p class="main-title">Отзывы о нас</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="reviews-page" >
+          <div class="_container" >
+            <div class="reviews-page__body">
+              <div class="reviews-page__rp-left" >
+                <div class="rp-left__top" >
+                  <div class="reviews-left__body rp-left__body">
+                    <div class="reviews-left__body__top">
+                      <p class="reviews-left__title">Cредняя оценка аптеки</p>
+                      <div class="reviews-left__top">
+                        <p class="reviews-left__grade__text">4.8</p>
+                        <div class="stars second-block__item__stars product-card__start">
+                          <div class="svg star-small star"></div>
+                          <div class="svg star-small star"></div>
+                          <div class="svg star-small star"></div>
+                          <div class="svg star-small star"></div>
+                          <div class="svg star-small star-minus"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-left__grade-block">
+                      <p class="reviews-left__text fz-16px">
+                        Общий рейтинг на основе 4349 отзывов наших покупателей
+                      </p>
+                      <div class="reviews-left__button-block">
+                        <a href="#" class="button reviews__button">
+                          Оставить отзыв</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rp-left__bottom" >
+                  <div class="rp-left__srars" >
+                    <input class="rp-left__input"  type="checkbox" id="reviewStars5" name="reviewStars5" value="newsletter">
+                    <label for="reviewStars5">
+                      <div class="stars second-block__item__stars product-card__start">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star">
+                        </div>
+                      </div>
+                    </label>
+                    <p class="rp-left__reviews" >471 отзывов</p>
+                  </div>
+                  <div class="rp-left__srars" >
+                    <input class="rp-left__input"  type="checkbox" id="reviewStars4" name="reviewStars4" value="newsletter">
+                    <label for="reviewStars4">
+                      <div class="stars second-block__item__stars product-card__start">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star-minus">
+                        </div>
+                      </div>
+                    </label>
+                    <p class="rp-left__reviews" >121 отзывов</p>
+                  </div>
+                  <div class="rp-left__srars" >
+                    <input class="rp-left__input"  type="checkbox" id="reviewStars3" name="reviewStars3" value="newsletter">
+                    <label for="reviewStars3">
+                      <div class="stars second-block__item__stars product-card__start">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star-minus"></div>
+                        <div class="svg star-small star-minus">
+                        </div>
+                      </div>
+                    </label>
+                    <p class="rp-left__reviews" >38 отзывов</p>
+                  </div>
+                  <div class="rp-left__srars" >
+                    <input class="rp-left__input"  type="checkbox" id="reviewStars2" name="reviewStars2" value="newsletter">
+                    <label for="reviewStars2">
+                      <div class="stars second-block__item__stars product-card__start">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star-minus"></div>
+                        <div class="svg star-small star-minus"></div>
+                        <div class="svg star-small star-minus">
+                        </div>
+                      </div>
+                    </label>
+                    <p class="rp-left__reviews" >21 отзывов</p>
+                  </div>
+                  <div class="rp-left__srars" >
+                    <input class="rp-left__input"  type="checkbox" id="reviewStars1" name="reviewStars1" value="newsletter">
+                    <label for="reviewStars1">
+                      <div class="stars second-block__item__stars product-card__start">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star-minus"></div>
+                        <div class="svg star-small star-minus"></div>
+                        <div class="svg star-small star-minus"></div>
+                        <div class="svg star-small star-minus">
+                        </div>
+                      </div>
+                    </label>
+                    <p class="rp-left__reviews" >12 отзывов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-page__rp-right" >
+                <div class="categories__sort">
+                  <div class="sort__left">
+                    <div class="sort__left__body">
+                      <p class="section__title">
+                        Сортировать:
+                      </p>
+                    </div>
+                    <a href="#" class="sort__price sort__hover">
+                      <div class="sort__price__svg-block">
+                        <span></span>
+                      </div>
+                      <p class="sort__price__text">По цене</p>
+                    </a>
+                    <a href="#" class="sort__text sort__hover">
+                      Самые полезные
+                    </a>
+                    <a href="#" class="sort__price sort__hover">
+                      <div class="sort__price__svg-block">
+                        <span></span>
+                      </div>
+                      <p class="sort__price__text">По оценке</p>
+                    </a>
+                  </div>
+                  <div class="sort__right">
+                      <a href="#" class="sort__page">
+                        <p>1</p>
+                      </a>
+                      <a href="#" class="sort__page">
+                        <p>2</p>
+                      </a>
+                      <a href="#" class="sort__page">
+                        <p>3</p>
+                      </a>
+                      <a href="#" class="sort__page">
+                        <p>4</p>
+                      </a>
+                      <a href="#" class="sort__page">
+                        <p>...</p>
+                      </a>
+                      <a href="#" class="sort__page">
+                        <p>32</p>
+                      </a>
+                  </div>
+              </div>
+              <ul class="reviews-right__body">
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании форм развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа форм развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.
+                  </p>
+                </li>
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании форм развития.
+                  </p>
+                </li>
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании форм развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа форм развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.
+                  </p>
+                </li>
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании форм развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа форм развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.
+                  </p>
+                </li>
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании форм развития.
+                  </p>
+                </li>
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание дальнейших направлений развития. Товарищи! реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации форм развития. Разнообразный и богатый опыт укрепление и развитие структуры играет важную роль в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции требуют определения и уточнения систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+                  </p>
+                </li>
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании форм развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа форм развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.
+                  </p>
+                </li>
+                <li class="review__li">
+                  <div class="review__top">
+                    <div class="rb__flex">
+                        <p class="review__title">
+                        Лиана, Москва,
+                        <span class="review__span">25 Июля</span>
+                      </p>
+                      <div class="stars second-block__item__stars product-card__start review__stars">
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                        <div class="svg star-small star"></div>
+                      </div>
+                  </div>
+                    <div class="people-review__like-block">
+                      <a href="#" class="like-block__text like-block__text__like">2
+                        <div class="like"></div>
+                      </a>
+                      <a href="#" class="like-block__text like-block__text__dislike">0
+                        <div class="dislike"></div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании форм развития.
+                  </p>
+                </li>
+              </ul>
+              <div class="block__button">
+                <a href="#" class="button__link">
+                  <div class="svg button__link__svg"> </div>
+                  Показать ещё отзывы
+                </a>
+              </div>
+              <div class="leave-feedback">
+                <div class="leave-feedback__body reviews_feedback__body">
+                  <h3 class="leave-feedback__title">Оставить отзыв</h3>
+                  <div class="leave-feedback__stars">
+                    <p class="leave-feedback__stars__title">
+                      Оценка:
+                    </p>
+                    <div class="stars second-block__item__stars leave-feedback__start-block">
+                      <div class="svg star-small star-big"></div>
+                      <div class="svg star-small star-big"></div>
+                      <div class="svg star-small star-big"></div>
+                      <div class="svg star-small star-big"></div>
+                      <div class="svg star-small star-big__minus"></div>
+                    </div>
+                  </div>
+                  <form class="popup-new__form leave-feedback__form">
+                    <div class="popup-new__block-name leave-feedback__name">
+                      <input class="popup-new__input popup-new__input-name" type="text" id="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="popup-new__block-email leave-feedback__email">
+                      <input class="popup-new__input popup-new__input-email" type="text" id="email" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="popup-new__block-text leave-feedback__problem">
+                      <input class="popup-new__input popup-new__input-text " type="text" id="text" placeholder="Напишите подробный отзыв, это важно ...">
+                    </div>
+                    <div class="popup-new__bottom-block leave-feedback__bottom-block">
+                      <button type="submit" class="popup-request button popup-new__button">отправить</button>
+                    </div>
+                    <div class="popup-new__bottom-block__text leave-feedback__text">
+                      <p class="popup-new__bottom-text">Нажимая на кнопку, вы соглашаетесь на обработку <u><a href="#" class="popup-new__bottom-span">персональных данных</a></u></p>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="_container footer_container">
+          <div class="footer__main-body">
+            <div class="footer__question__position">
+              <div class="footer__question__body">
+                <p class="footer__question__title">Остались вопросы?</p>
+                <form class="footer__question__form">
+                  <input
+                    class="footer__question__input footer__question__name"
+                    id="name"
+                    placeholder="Иванов Иван Иванович"
+                  />
+                  <input
+                    class="footer__question__input footer__question__number"
+                    id="number"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                  <p class="footer__question__text">
+                    Нажимая на кнопку, вы соглашаетесь на обработку
+                    <a href="#" class="footer__question__span"
+                      >персональных данных</a
+                    >
+                  </p>
+                  <button class="button footer__button">Задать вопрос</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer__body">
+              <div class="footer__block">
+                <a href="./index.html" class="logo">
+                  <div class="svg logo__svg footer__logo"></div>
+                  <div class="logo__text">
+                    <p class="logo__title footer__color">
+                      <span class="logo__title__span footer__color">
+                        Аптека.</span
+                      >
+                      онлайн
+                    </p>
+                    <p class="logo__suptitle footer__logo__small-text">
+                      Ваша онлайн аптека
+                    </p>
+                  </div>
+                </a>
+                <p class="footer__rights">
+                  Все права защищены и охраняются законом
+                </p>
+              </div>
+              <ul class="footer__items">
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">О компании </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Обратная связь </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Доставка </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Реклама на сайте </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Самовывоз из аптек </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Франшиза </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Оплата </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Вакансии </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Юридическим лицам </span>
+                  </a>
+                </li>
+
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text"
+                      >Политика конфиденциальности
+                    </span>
+                  </a>
+                </li>
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text">Лицензия </span>
+                  </a>
+                </li>
+
+                <li class="footer__items__li">
+                  <a href="#" class="footer__item">
+                    <span class="footer__item__text"
+                      >Пользовательское соглашение
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__contacts">
+                <div class="footer__contacts-block">
+                  <a href="tel:89169480428" class="header__contact">
+                    <div
+                      class="svg header__contact__svg header__contact__svg__email"
+                    ></div>
+                    <p class="header__contact__title footer__contact__title">
+                      info@restoll.ru
+                    </p>
+                    <p
+                      class="header__contact__suptitle footer__contact__suptitle"
+                    >
+                      Напишите нам
+                    </p>
+                  </a>
+                  <a
+                    href="tel:89169480428"
+                    class="header__contact footer__contact__last"
+                  >
+                    <div class="svg header__contact__svg"></div>
+                    <p class="header__contact__title footer__contact__title">
+                      8-800-777-22-33
+                    </p>
+                    <p
+                      class="header__contact__suptitle footer__contact__suptitle"
+                    >
+                      Круглосуточно
+                    </p>
+                  </a>
+                </div>
+                <div class="footer__messages">
+                  <a href="#" class="svg footer__massege footer__massege-1"></a>
+                  <a href="#" class="svg footer__massege footer__massege-2"></a>
+
+                  <a href="#" class="svg footer__massege footer__massege-3"></a>
+
+                  <a href="#" class="svg footer__massege footer__massege-4"></a>
+
+                  <a href="#" class="svg footer__massege footer__massege-5"></a>
+
+                  <a href="#" class="svg footer__massege footer__massege-6"></a>
+                </div>
+              </div>
+              <p class="footer__text">
+                Общество с ограниченной ответственностью «еАптека»; Адрес:
+                Москва, Фрунзенская набережная, дом 42, цокольный этаж,
+                помещение I, комната 2; Лицензия: ЛО-50-02-007632 от 27 ноября
+                2020 г.; ЛО-77-02-011346 от 22 декабря 2020 г.; ОГРН:
+                1147746631988, ИНН 7704865540
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

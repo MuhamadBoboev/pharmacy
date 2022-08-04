@@ -128,11 +128,7 @@ a {
   background-position: center;
   background-image: url(../img/svg/next.svg);
 }
-.stars {
-  @include grid(repeat(5, 1fr), 1fr);
-  grid-gap: 2px;
-  align-items: center;
-}
+
 .main-title {
   @include fontRalewayBold(36px, 120%);
   color: $colorBlack;
@@ -178,4 +174,25 @@ a {
   &::before {
     bottom: 0;
   }
+}
+.button__link {
+  padding: 17px 41px 16px;
+  display: block;
+  @include fontRobotoBold(14px, 100%);
+  color: $colorWhite;
+  background-color: $BGButton;
+  text-transform: uppercase;
+  position: relative;
+  &:hover {
+    color: $colorWhite;
+  }
+}
+.button__link__svg {
+  background-image: url(../img/svg/chevron_duo_right.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 17px;
+  width: 9px;
+  height: 9px;
 }
