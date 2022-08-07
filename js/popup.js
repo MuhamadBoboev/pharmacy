@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function buttonClick(event) {
     let id = this.getAttribute("data-modal");
     let modal = document.getElementById(id);
-    modal.style.display = "flex";
+    modal.style.display = "block";
     document.body.classList.add("lock");
   }
   for (let i = 0; i < btn.length; i++) {
@@ -92,7 +92,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 });
-
+document.addEventListener("DOMContentLoaded", () => {
+  let clBtn = document.querySelectorAll(".categories__left__b-button-top")[1];
+  let clBtnBlock = document.querySelector("[data-catalog]");
+  clBtn.addEventListener("click", () => {
+    clBtnBlock.classList.toggle("active");
+  });
+});
 document.addEventListener("DOMContentLoaded", () => {
   function clickHover() {
     let headerBottomBtn = document.querySelector("[data-hover-1='1']");

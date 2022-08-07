@@ -238,6 +238,14 @@
 }
 
 /* media__alphabet */
+@media (max-width: 1500px) {
+  .product-filter__blocks {
+    margin-top: 60px;
+    @include grid(1fr 1fr 1fr, 1fr 1fr 1fr 1fr 1fr);
+    grid-template-areas: "a b c" "a b d" "a e f" "g h i";
+    grid-gap: 30px;
+  }
+}
 @media (max-width: 960px) {
   .product-filter__blocks {
     margin-top: 60px;
@@ -282,8 +290,7 @@
     grid-gap: 20px;
   }
   .product-filter__block {
-  }
-  .product-filter__block__body {
-    padding: 35px 15px;
+    display: flex;
+    flex-direction: column;
   }
 }

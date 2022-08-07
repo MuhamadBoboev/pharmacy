@@ -353,6 +353,34 @@
         </div>
         </div>
       </form>
+      <form action="https://echo.htmlacademy.ru" method="post" id="myModal8" class="modal popup popup__request ">
+        <div class="popup-new call-back">
+          <div class="popup-new__body" >
+            <div class="popup-new__top ">
+              <p class="popup-new__title" >Товара нет в наличии?</p>
+            <a data-modal="myModal8"  class= "close popup__close close-popup close-popup_request popup-new__close" >
+              <div class='svg popup-new__close__svg' ></div>
+            </a>
+            </div>
+            <p class="popup-new__text" >Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам  </p>
+            <div class="popup-new__form call-back__form" >
+              <div class="popup-new__block-name">
+                <input class="popup-new__input popup-new__input-name" name="name" type="text" id="name" placeholder="Ваше имя" ></input>
+              </div>
+              <div class="popup-new__block-email">
+                <input class="popup-new__input popup-new__input-email" name="tell" type="text" id="tell" placeholder="Телефон" ></input>
+              </div>
+              <div class="popup-new__bottom-block" >
+                <button type='submit' class="popup-request button call-back__button" >Перезвоните мне</button>
+              </div>
+              <div class="popup-new__bottom-block__text" >
+                <p class="popup-new__bottom-text call-back__text" >Нажимая на кнопку, вы соглашаетесь на обработку <u><a href='#' class="popup-new__bottom-span" >персональных данных</a></u></p>
+              </div>
+
+          </div>
+        </div>
+        </div>
+      </form>
       <header class="header ">
         <div class="header__top">
           <div class="_container header_container">
@@ -375,7 +403,7 @@
                   <span class="header__city__text">Избранное</span>
                   <div class="header__city__svg header__city__svg__3"></div>
                 </a>
-                <a href="#"  class="header__top__block myBtn"
+                <a  class="header__top__block myBtn"
                 data-modal="myModal2">
                   <span  class="header__city__text ">Личный кабинет</span>
                   <div class="header__city__svg header__city__svg__4"></div>
@@ -726,7 +754,7 @@
               </div>
 
             </div>
-            <div class="header__search" id="searchHeader" >
+            <div class="header__search none-1224" id="searchHeader" >
               <div class="city__input-block header__search__input__block">
                 <input type="search" class="city__input header__search__input" placeholder="">
                 <div class="svg city__input__svg header__search__input-svg"></div>
@@ -744,7 +772,7 @@
                   placeholder="Начинайте писать или введите название товара..."
                 />
               </div>
-              <button type="button" class="button">Заказать звонок</button>
+              <button class="button myBtn" class="button" data-modal="myModal6">Заказать звонок</button>
               <a href="#" class="svg header__tell-svg header__basket"></a>
             </div>
           </div>
@@ -1844,7 +1872,8 @@
           <div class="header__mobile__contacts__active">
             <div class="header__contacts">
               <div class="header__contact__item">
-                <a href="tel:89169480428" class="header__contact">
+                <a href="tel:89169480428" class="header__contact myBtn"
+                  data-modal="myModal1">
                   <div
                     class="svg header__contact__svg header__contact__svg__email"
                   ></div>
@@ -1853,14 +1882,16 @@
                 </a>
               </div>
               <div class="header__contact__item">
-                <a href="tel:88007772223" class="header__contact">
+                <a href="tel:88007772223" class="header__contact myBtn"
+                data-modal="myModal6" >
                   <div class="svg header__contact__svg"></div>
                   <p class="header__contact__title">8-800-777-22-33</p>
                   <p class="header__contact__suptitle">Напишите нам</p>
                 </a>
               </div>
               <div class="header__contact__item">
-                <a href="tel:87952233403" class="header__contact">
+                <a href="tel:87952233403" class="header__contact myBtn"
+                data-modal="myModal1">
                   <div class="svg header__contact__svg"></div>
                   <p class="header__contact__title">8 (495) 223-34-03</p>
                   <p class="header__contact__suptitle">Интернет-аптека</p>
@@ -1942,7 +1973,7 @@
             <div class="header_container">
               <ul class="header__catalogs__body">
                 <li class="header__catalog__li">
-                  <a href="#" class="header__catalog">
+                  <a href="./categories.html" class="header__catalog">
                     <div
                       class="svg header__catalog__svg header__catalog__svg-1"
                     ></div>
@@ -2023,13 +2054,14 @@
                 </li>
               </ul>
               <div class="header__top__flex__block header__bottom__flex__block">
-                <a class="header__top__block">
+                <a class="header__top__block ">
                   <div class="header__city__svg header__city__svg__3"></div>
                   <span class="header__city__text header__city__text__bottom"
                     >Избранное</span
                   >
                 </a>
-                <a class="header__top__block">
+                <a class="header__top__block myBtn"
+                data-modal="myModal2">
                   <div class="header__city__svg header__city__svg__4"></div>
                   <span class="header__city__text header__city__text__bottom"
                     >Личный кабинет</span
@@ -2060,14 +2092,14 @@
                       эффективно очищает полость рта по сравнению с обычной
                       мануальной зубной щеткой.
                     </p>
-                    <div class="main-content_button-block none-768">
+                    <!-- <div class="main-content_button-block nne-768">
                       <a href="./product-filter.html" class="button main-content_button">
                         <p class="main-content_button__text">
                           Перейти в каталог
                         </p>
                         <div class="svg main-content_button__svg"></div>
                       </a>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="left-block__img-block">
                     <div>
@@ -2361,7 +2393,7 @@
                 class="swiper-container product-swiper-1 product__products-1__items"
               >
                 <div class="swiper-wrapper product__product-cards">
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2420,8 +2452,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2480,8 +2518,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button b-button__not-available myBtn"
+                      data-modal="myModal8" >
+                        Сообщить о наличии
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2540,8 +2584,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2600,8 +2650,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2659,6 +2715,12 @@
                         </div>
                         <div class="svg product-card__busket"></div>
                       </div>
+                    </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
                     </div>
                   </a>
                 </div>
@@ -2675,7 +2737,7 @@
                 class="swiper-container product-swiper-2 product__products-1__items"
               >
                 <div class="swiper-wrapper product__product-cards">
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2734,8 +2796,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2794,8 +2862,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2854,8 +2928,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2914,8 +2994,14 @@
                         <div class="svg product-card__busket"></div>
                       </div>
                     </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button  myBtn"
+                      data-modal="myModal4" >
+                        Купить в 1 клик
+                      </button>
+                    </div>
                   </a>
-                  <a href="#" class="swiper-slide product-card">
+                  <a class="swiper-slide product-card">
                     <div class="product-card__block__img">
                       <div class="product-card__img">
                         <img
@@ -2973,6 +3059,12 @@
                         </div>
                         <div class="svg product-card__busket"></div>
                       </div>
+                    </div>
+                    <div class="product-card__bottom ">
+                      <button class="product-card__b-button b-button__not-available myBtn"
+                      data-modal="myModal8" >
+                      Сообщить о наличии
+                      </button>
                     </div>
                   </a>
                 </div>
@@ -3115,7 +3207,7 @@
                       Общий рейтинг на основе 4349 отзывов наших покупателей
                     </p>
                     <div class="reviews-left__button-block">
-                      <a href="#" class="button reviews__button">
+                      <a href="./reviews.html" class="button reviews__button">
                         Оставить отзыв</a
                       >
                     </div>
@@ -4481,7 +4573,7 @@
               </div>
               <ul class="footer__items">
                 <li class="footer__items__li">
-                  <a href="#" class="footer__item">
+                  <a href="./company-page.html" class="footer__item">
                     <span class="footer__item__text">О компании </span>
                   </a>
                 </li>
@@ -4549,7 +4641,8 @@
               </ul>
               <div class="footer__contacts">
                 <div class="footer__contacts-block">
-                  <a href="tel:89169480428" class="header__contact">
+                  <a href="tel:89169480428" class="header__contact myBtn"
+                  data-modal="myModal1">
                     <div
                       class="svg header__contact__svg header__contact__svg__email"
                     ></div>
@@ -4564,7 +4657,8 @@
                   </a>
                   <a
                     href="tel:89169480428"
-                    class="header__contact footer__contact__last"
+                    class="header__contact footer__contact__last myBtn"
+                    data-modal="myModal6"
                   >
                     <div class="svg header__contact__svg"></div>
                     <p class="header__contact__title footer__contact__title">

@@ -8,6 +8,8 @@
   @include fontRalewayBold(14px, 110%);
   color: $colorWhite;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
   text-transform: uppercase;
   padding: 17px 41px;
   background-color: $BGButton;

@@ -200,6 +200,7 @@
 .logo__title {
   @include fontRalewayRegular(22px, 110%);
   color: $headerLogoTitle;
+  min-width: max-content;
   // margin: 0;
 }
 .logo__title__span {
@@ -756,11 +757,13 @@
   background-color: $colorWhite;
   .header__city__svg__2 {
     background-image: url(../img/svg/Close-green.svg);
+    background-size: 12px;
   }
 }
 .header__search {
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
 .header__search__input__block .header__search__input {
   width: 50px;
@@ -773,7 +776,7 @@
 .header__search__input__block .header__search__input-svg {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: auto;
   right: 11px;
   width: 24px;

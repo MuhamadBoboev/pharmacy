@@ -12,20 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.onclick = function (ev) {
-      console.log(ev.target);
       const myDiv = document.getElementById("searchHeader");
-      if (myDiv.target) {
-        alert("asd");
+      if (!myDiv.contains(ev.target)) {
+        searchBlockNone.classList.remove("active");
+        searchBlock.classList.remove("active");
+        inputSearch.placeholder = "";
       }
     };
-
-    // document.addEventListener("click", function (e) {
-    //   if (e.target.className != "header__search") {
-    // searchBlockNone.classList.remove("active");
-    // searchBlock.classList.remove("active");
-    // inputSearch.placeholder = "";
-    //   }
-    // });
   }
   searchHeader();
 });
