@@ -1,5 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {});
+document.addEventListener("DOMContentLoaded", () => {
+  function searchHeader() {
+    let searchBtn = document.querySelector(".header__search__input__block");
+    let inputSearch = document.querySelector(".header__search__input");
+    let searchBlockNone = document.querySelector(".header__block__search");
+    let searchBlock = document.querySelector(".header__search");
+    searchBtn.addEventListener("click", (e) => {
+      searchBlockNone.classList.add("active");
+      searchBlock.classList.add("active");
+      inputSearch.placeholder =
+        "Начинайте писать или введите название товара...";
+    });
 
+    document.onclick = function (ev) {
+      console.log(ev.target);
+      const myDiv = document.getElementById("searchHeader");
+      if (myDiv.target) {
+        alert("asd");
+      }
+    };
+
+    // document.addEventListener("click", function (e) {
+    //   if (e.target.className != "header__search") {
+    // searchBlockNone.classList.remove("active");
+    // searchBlock.classList.remove("active");
+    // inputSearch.placeholder = "";
+    //   }
+    // });
+  }
+  searchHeader();
+});
+document.addEventListener("DOMContentLoaded", () => {});
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".header__burger");
   const menu = document.querySelector(".header-mobile__menu");
@@ -217,67 +247,6 @@ document.addEventListener("DOMContentLoaded", () => {
       slide();
     });
   });
-
-  /* *************** popup ****************** */
-
-  function popup(popupElement) {
-    // const popupFunction = document.querySelector(".${popupElement}");
-    const popupLinks = document.querySelectorAll(".popup-link");
-    const popupRequestButton = document.querySelectorAll(".popup-request");
-    const lockPadding = document.querySelectorAll(".lock-padding");
-
-    popupLinks.forEach(function (e) {
-      e.addEventListener("click", function () {
-        let popupElement = document.querySelector(".popup__first");
-        // let headerBlock = document.querySelector(".header_container");
-        let html = document.documentElement;
-        let marginSize = window.innerWidth - html.clientWidth;
-        let popupClose = popup.querySelector("#popupClose");
-        // let text = popup.querySelector("[data-text-send]");
-
-        body.style.paddingRight = marginSize + "px";
-        // headerBlock.style.marginLeft = 18 + "px";
-        // headerBlock.style.marginRight = 18 + "px";
-        body.style.overflow = "hidden";
-
-        popup.classList.add("open");
-        // text.innerText = e.innerText;
-
-        popupClose.addEventListener("click", function () {
-          popup.classList.remove("open");
-          body.style.overflow = "auto";
-          body.style.paddingRight = 0 + "px";
-          headerBlock.style.margin = 0 + " auto";
-        });
-      });
-    });
-    popupRequestButton.forEach(function (e) {
-      e.addEventListener("click", function () {
-        // let headerBlock = document.querySelector(".header_container");
-        let html = document.documentElement;
-        let marginSize = window.innerWidth - html.clientWidth;
-
-        let popupClose = popupRequest[0].querySelector(".popup__close");
-
-        body.style.paddingRight = marginSize + "px";
-        // headerBlock.style.marginLeft = 18 + "px";
-        // headerBlock.style.marginRight = 18 + "px";
-        body.style.overflow = "hidden";
-        console.log(popupClose);
-        popupRequest[0].classList.add("opens");
-
-        popupClose.addEventListener("click", function () {
-          popupRequest[0].classList.remove("opens");
-
-          body.style.overflow = "auto";
-          body.style.paddingRight = 0 + "px";
-          headerBlock.style.margin = 0 + " auto";
-          popupRequest[0].classList.remove("opens");
-        });
-      });
-    });
-  }
-  popup();
 
   /******************* swiper **************** */
 

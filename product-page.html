@@ -648,7 +648,8 @@
                           </div>
                           <div class="button counter__butten" ><p>В корзину</p></div>
                         </div>
-                        <a href="#" class="buscet__button" >Купить в 1 клик</a>
+                        <a  class="buscet__button myBtn"
+                        data-modal="myModal4" >Купить в 1 клик</a>
                       </div>
                     </div>
                   </div>
@@ -1888,9 +1889,78 @@
           </div>
         </div>
       </footer>
+      <form action="https://echo.htmlacademy.ru" method="post" id="myModal4" class="modal popup popup__request ">
+        <div class="popup-new order__popup">
+          <div class="popup-new__body" >
+            <div class="popup-new__top ">
+              <div class="personal-area" >
+                <p class="popup-new__title" >Заказ в 1 клик</p>
 
+              </div>
+              <a href="#"  data-modal="myModal4"  class= "close popup__close close-popup close-popup_request popup-new__close" >
+                <div class='svg popup-new__close__svg' ></div>
+              </a>
+            </div>
+            <p class="popup-new__text" >Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам
+            </p>
+            <div class="order" >
+              <div class="product-card__block__img">
+                <div class="product-card__img order__left__img">
+                  <img src="./img/main-content/product-4.jpg" alt="таблетка">
+                </div>
+              </div>
+              <div class="order__right" >
+                <div class="product-card__top order__right__top">
+                  <p class="product-card__available fz-12px">
+                    Есть в наличии
+                  </p>
+                  <div class="stars second-block__item__stars product-card__start">
+                    <div class="svg star-small star"></div>
+                    <div class="svg star-small star"></div>
+                    <div class="svg star-small star"></div>
+                    <div class="svg star-small star"></div>
+                    <div class="svg star-small star-minus"></div>
+                  </div>
+                </div>
+                <p class="product-card__title fz-16px">
+                  Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
+                </p>
+                <div class="product-card__price-block">
+                  <div class="product-card__price order__price">
+                    <p class="product-card__price__1 fz-24px">
+                      41 108 руб.
+                    </p>
+                    <p class="product-card__price__2 fz-14px">
+                      49 999 руб.
+                    </p>
+                  </div>
+                  <div class="counter order__counter">
+                    <div class="counter__numer">1</div>
+                  </div>
+                </div>
+              </div>
 
+            </div>
+            <div class="popup-new__form order__form" >
+              <div class="popup-new__block-name">
+                <input class="popup-new__input popup-new__input-name" type="text" id="email" name="email" placeholder="Ваш e-mail" ></input>
+              </div>
+              <div class="popup-new__block-email">
+                <input class="popup-new__input popup-new__input-email" type="text" id="tell" name='tell' placeholder="Телефон" ></input>
+              </div>
+              <div class="popup-new__bottom-block" >
+                <button type='submit' class="popup-request button popup-new__button" >Сделать заказ</button>
+              </div>
+              <div class="popup-new__bottom-block__text" >
+                <p class="popup-new__bottom-text order__form__text" >Нажимая на кнопку, вы соглашаетесь на обработку <u><a href='#' class="popup-new__bottom-span" >персональных данных</a></u></p>
+              </div>
 
+          </div>
+        </div>
+        </div>
+      </form>
+
+    <script src="./js/popup.js" ></script>
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/product-page.js"></script>
   </body>

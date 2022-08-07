@@ -123,7 +123,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 0;
   width: 100%;
 }
 .header__top__flex__block {
@@ -132,13 +131,13 @@
   grid-gap: 82px;
 }
 .header__top__block {
+  padding: 11px 11px;
   display: flex;
   align-items: center;
   grid-gap: 13px;
   cursor: pointer;
 }
-.header__top__block-2:hover {
-}
+
 .header__body {
   display: flex;
   justify-content: space-between;
@@ -286,6 +285,7 @@
   border-radius: 50%;
   border: 1px solid #e0e0e0;
 }
+
 .header__search-button {
   background-image: url(../img/svg/search.svg);
 }
@@ -298,10 +298,13 @@
 .header__catalogs__body {
   list-style: none;
   @include grid(repeat(9, 1fr), auto);
-  grid-gap: 16px;
-  padding: 25px 0;
+  li {
+    display: flex;
+  }
+  // grid-gap: 16px;
 }
 .header__catalog {
+  padding: 25px 15px;
   display: flex;
   width: max-content;
   align-items: center;
@@ -675,5 +678,113 @@
   }
   [data-contact="2"].active {
     display: flex;
+  }
+}
+
+/* ****************************** */
+.medicine__section {
+  display: none;
+}
+.medicine__section.hover {
+  display: block;
+}
+.medicine {
+  padding: 40px;
+  @include grid(1fr 1fr 350px, 1fr);
+}
+.medicine__li {
+  position: relative;
+}
+.medicine__link {
+  display: flex;
+  padding-left: 40px;
+  @include fontRobotoRegular(14px, 30px);
+  color: $colorBlackLevel1;
+  &:hover {
+    color: $BGButton;
+    font-weight: 700;
+  }
+}
+.medicine__block {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.medicine__link .medicine__link__svg {
+  top: 12px;
+}
+.medicine__items {
+  @include grid(1fr 1fr, 1fr);
+}
+.medicine__grid {
+  @include grid(1fr 1fr, 1fr);
+}
+.service-page__section {
+  display: none;
+}
+.service-page__section.hover {
+  display: block;
+}
+.service-page {
+  padding: 40px 15px;
+}
+
+[data-hover-1="1"].hover {
+  background-color: $colorWhite;
+  .header__catalog__text {
+    color: $colorBlack;
+  }
+  .header__catalog__svg-1 {
+    background-image: url(../img/svg/pills.svg);
+  }
+}
+.service-page__block {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.service-page__grid {
+  @include grid((repeat(6, 1fr)), 1fr);
+  position: relative;
+}
+.service-page__close {
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+[data-hover-2="2"].hover {
+  background-color: $colorWhite;
+  .header__city__svg__2 {
+    background-image: url(../img/svg/Close-green.svg);
+  }
+}
+.header__search {
+  display: flex;
+  align-items: center;
+}
+.header__search__input__block .header__search__input {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.header__block__search.active {
+  display: none;
+}
+.header__search__input__block .header__search__input-svg {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: auto;
+  right: 11px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/svg/search.svg);
+}
+.header__search.active {
+  width: 50%;
+  .header__search__input {
+    width: 100%;
+    padding: 0px 45px;
+    padding-left: 25px;
   }
 }

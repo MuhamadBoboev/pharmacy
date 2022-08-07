@@ -24,6 +24,9 @@ ul {
   list-style: none;
   color: $colorBlackLevel2;
 }
+a {
+  cursor: pointer;
+}
 h1,
 h2,
 h3,
@@ -66,8 +69,8 @@ div {
 @import "global-style.scss";
 
 @import "header.scss";
-@import "popup.scss";
 
+@import "popup.scss";
 @import "main-content.scss";
 @import "product-filter.scss";
 
