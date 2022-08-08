@@ -90,3 +90,24 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  let ppItems = document.querySelectorAll(".pp-content__item");
+  document
+    .querySelector(".pp-content__item_1")
+    .addEventListener("click", (e) => {
+      console.log("asd");
+      ppItems.forEach((e) => {
+        e.classList.toggle("active");
+      });
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  new ImageZoom(document.getElementById("slide-image"), {
+    width: 400,
+    height: 400,
+    scale: 0.3,
+    zoomWidth: 450,
+    zoomStyle: "width: 400px; height: 400px;",
+    offset: { vertical: 0, horizontal: 30 },
+  });
+});

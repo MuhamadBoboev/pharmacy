@@ -1,7 +1,7 @@
 .health-blog__categories {
   grid-gap: 10px;
   margin: 30px 0;
-  height: 60px;
+  height: 50px;
 }
 .health-blog__item {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -55,10 +55,10 @@
     background-image: url(../img/svg/health-blog-9.svg);
   }
   &-9 {
-    background-image: url(../img/svg/health-blog-10.svg);
+    background-image: url(../img/svg/health-blog-9.svg);
   }
   &-10 {
-    background-image: url(../img/svg/health-blog-10.svg);
+    background-image: url(../img/svg/health-blog-9.svg);
   }
   img path {
     fill: red;
@@ -135,4 +135,49 @@
   display: flex;
   flex-direction: column;
   grid-gap: 30px;
+}
+
+@media (max-width: 960px) {
+  .useful-info__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 768px) {
+  .useful-info__items {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: auto;
+  }
+  .health__item_1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .health__item__img {
+    height: 220px;
+    img {
+      object-fit: cover;
+    }
+  }
+  .health__item-1__title {
+    font-size: 18px;
+  }
+  .health__item-1__text {
+    font-size: 14px;
+  }
+  .tag__text {
+    font-size: 12px;
+  }
+  ._container .search {
+    padding: 15px;
+    padding-right: 25px;
+  }
+  .search__block::after {
+    top: 16px;
+  }
 }

@@ -123,6 +123,7 @@
 }
 .categories-block__items__button {
   position: relative;
+  overflow: hidden;
   height: 100%;
   display: block;
   p {
@@ -505,6 +506,9 @@
   display: none;
 }
 @media (max-width: 960px) {
+  .categories-block__item-body:hover .position-items__position-block {
+    display: none;
+  }
   .cl-modal {
     padding: 20px;
   }

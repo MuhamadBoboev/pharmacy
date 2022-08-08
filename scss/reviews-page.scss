@@ -74,3 +74,17 @@
 .reviews_feedback__body {
   padding: 30px 220px;
 }
+@media (max-width: 960px) {
+  .reviews-page__body {
+    grid-template-columns: 1fr;
+  }
+  .sort__left .none-768 {
+    display: none;
+  }
+  .rp-left__body {
+    padding: 20px 10px;
+  }
+  .reviews_feedback__body {
+    padding: 20px;
+  }
+}

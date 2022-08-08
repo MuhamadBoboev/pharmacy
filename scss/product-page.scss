@@ -74,6 +74,26 @@
   width: 100%;
   height: 100%;
 }
+.image {
+  width: 600px;
+  overflow: hidden;
+  img {
+    margin: auto;
+    display: block;
+    transition: opacity 0.5s;
+    width: 600px;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  &__wrap {
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+}
 .img-bl__big-img__block {
   position: absolute;
   margin: 0 auto;
@@ -122,9 +142,11 @@
 }
 .img-bl__big-img__block {
   position: absolute;
-  width: 80%;
-  height: 80%;
-  top: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  // top: 10%;
   img {
     width: 100%;
     height: 100%;
@@ -685,4 +707,99 @@
   justify-content: flex-start;
   align-items: flex-end;
   height: 100%;
+}
+.js-image-zoom__zoomed-area {
+  z-index: 10;
+  background-color: #5d71dd ip !important;
+  background-color: red;
+}
+.js-image-zoom__zoomed-image {
+  z-index: 10;
+  background-color: $colorWhite !important;
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+.delivery {
+  margin-top: 70px;
+}
+.delivery__body {
+  @include grid(1fr 1fr, auto);
+  grid-gap: 30px;
+}
+.delivery__block {
+  & > p {
+    @include fontRalewayRegular(18px, 100%);
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+.delivery__block-body {
+  @include grid(1fr, auto);
+}
+.delivery__item:nth-child(odd) {
+  background-color: #f7fafb;
+}
+.delivery__item__body {
+  padding: 17px 20px;
+  @include grid(1fr max-content max-content, 1fr);
+  grid-gap: 30px;
+}
+.delivery__item__text-2 {
+  @include fontRobotoRegular(18px, 100%);
+  color: $colorBlack;
+}
+.pickup {
+  margin-top: 70px;
+}
+.pickup__body {
+  @include grid(1fr, auto);
+}
+.pickup__item__body {
+  padding: 17px 20px;
+  grid-gap: 150px;
+  @include grid(1fr max-content max-content, 1fr);
+  border-bottom: 1px solid #edf3f5;
+}
+
+.pickup__item__bottom {
+  padding: 17px 0px;
+}
+.pp-content__item.active {
+  display: block;
+}
+@media (max-width: 768px) {
+  .pp-content__item {
+    display: none;
+  }
+  .pp-content__item_1 {
+    display: block;
+  }
+  .pp-content__item_1 {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 20px;
+      right: 20px;
+      background-image: url(../img/svg/chevron_duo_down-2.svg);
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .pp-content__main {
+    @include grid(1fr, auto);
+  }
+}
+@media (max-width: 768px) {
+  .page-titles__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pp-content__top {
+    @include grid(1fr, auto);
+    grid-gap: 0;
+    margin: 0px -15px;
+  }
 }

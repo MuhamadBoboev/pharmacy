@@ -198,3 +198,8 @@ a {
   width: 9px;
   height: 9px;
 }
+@media (min-width: 768px) {
+  .n768-none {
+    display: none;
+  }
+}
