@@ -168,7 +168,8 @@
     top: -140px;
   }
   .footer__question__input {
-    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
   }
   .footer__body {
     display: grid;

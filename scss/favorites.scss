@@ -1,0 +1,69 @@
+.favorites__top__right {
+  display: flex;
+  grid-gap: 15px;
+}
+.favorites__top {
+  display: flex;
+  justify-content: space-between;
+}
+.favorites__top__r-clean {
+  display: flex;
+  align-items: center;
+}
+.favorites__top__r__text {
+  @include fontRalewayBold(14px, 100%);
+  padding-left: 44px;
+  position: relative;
+  display: inline-block;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/svg/trash_full.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.favorites__cards {
+  @include grid(repeat(5, 1fr), auto);
+  grid-gap: 30px;
+}
+.favorites__items {
+  @include grid(repeat(4, 1fr), auto);
+  grid-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .favorites__cards {
+    @include grid(repeat(4, 1fr), auto);
+  }
+}
+@media (max-width: 960px) {
+  .favorites__cards {
+    @include grid(repeat(2, 1fr), auto);
+  }
+}
+@media (max-width: 768px) {
+  .favorites__top {
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+  .favorites__top__right {
+    flex-direction: column;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .favorites__top__rb-button {
+    order: -1;
+  }
+  .favorites__cards {
+    @include grid(repeat(1, 1fr), auto);
+  }
+  .favorites__items {
+    @include grid(repeat(2, 1fr), auto);
+    grid-gap: 15px;
+  }
+}
