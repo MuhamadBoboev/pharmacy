@@ -1,0 +1,137 @@
+.basket__b-main {
+  @include grid(1fr 360px, 1fr);
+  grid-gap: 30px;
+}
+.b-order {
+  justify-content: space-between;
+  position: relative;
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+      background-image: url(../img/svg/off_close.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.b-order__top {
+  display: flex;
+  justify-content: flex-end;
+}
+.b-order__clear {
+  @include fontRalewayBold(14px, 100%);
+  color: $colorBlackLevel2;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 44px;
+  &::after {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/svg/trash_full.svg);
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.b-order__right {
+  display: flex;
+  grid-gap: 30px;
+}
+
+.b-order__block-img {
+  max-width: 228px;
+  max-height: 130px;
+}
+.b-order__img-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.b-order__price {
+  align-items: center;
+  grid-gap: 50px;
+}
+.b-order__img {
+}
+.b-main__right {
+}
+.b-main__right__body {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  border: 1px solid #e7e9eb;
+  border-radius: 5px;
+}
+.footer__question__title {
+  padding: 20px 0;
+  padding-top: 0;
+}
+.order__text-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.order__text-2 {
+}
+.order__color-green {
+  background: #f7fafb;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin: 0px -20px;
+}
+.button {
+}
+.footer__button {
+}
+.myBtn {
+}
+.promo-code {
+  margin-top: 30px;
+  margin-bottom: -20px;
+  padding-bottom: 20px;
+}
+.promo-code__title {
+  padding: 20px;
+}
+.promo-code__search {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    right: 14px;
+    top: 14px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-color: $BGButton;
+    border-radius: 50%;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/svg/chevron_right.svg);
+  }
+}
+.footer__question__input {
+}
+.promo-code__input {
+  height: 50px;
+  width: -webkit-fill-available !important;
+  width: -moz-available !important;
+}
+.basket__blocks {
+  @include grid(repeat(4, 1fr), 1fr);
+}
+.basket__bottom {
+}

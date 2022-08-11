@@ -382,23 +382,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: max-content;
 }
 .capabilities__img {
   display: block;
-  background-image: url(../img/main-content/capabilities-1.png);
+
   width: 50px;
   height: 40px;
+  &-1 {
+    background-image: url(../img/main-content/capabilities-1.png) !important ;
+  }
   &-2 {
-    background-image: url(../img/main-content/capabilities-2.png);
+    background-image: url(../img/main-content/capabilities-2.png) !important;
   }
   &-3 {
-    background-image: url(../img/main-content/capabilities-3.png);
+    background-image: url(../img/main-content/capabilities-3.png) !important;
   }
   &-4 {
-    background-image: url(../img/main-content/capabilities-4.png);
+    background-image: url(../img/main-content/capabilities-4.png) !important;
   }
   &-5 {
-    background-image: url(../img/main-content/capabilities-5.png);
+    background-image: url(../img/main-content/capabilities-5.png) !important;
   }
 }
 // .capabilities_container {
@@ -408,6 +412,7 @@
   display: flex;
   flex-direction: column;
   grid-gap: 10px;
+  text-align: start;
 }
 .capabilities__title {
   color: $colorBlack;
@@ -431,6 +436,7 @@
   .capabilitiis__item__body {
     flex-direction: column;
     grid-gap: 13px;
+    align-items: flex-start;
   }
   .capabilities__img-block {
     justify-content: center;
@@ -1122,6 +1128,8 @@
 @media (max-width: 768px) {
   .none-768 {
     display: none;
+  }
+  .capabilities__info {
   }
   .product-card__img::after {
     font-size: 12px;
