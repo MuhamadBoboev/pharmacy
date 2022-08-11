@@ -2,7 +2,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  grid-gap: 30px;
+  grid-gap: 40px;
 }
 .delivery {
   display: flex;
@@ -29,14 +29,14 @@
   &::after {
     position: absolute;
     content: "";
-    top: -17px;
+    top: -26px;
     left: 0;
     background-image: url(../img/delivery/delivery-1.png);
     background-position: center;
     background-repeat: no-repeat;
     object-fit: contain;
     width: 228px;
-    height: 120%;
+    height: 140%;
   }
 }
 .d-fragmen__text-body {
@@ -55,6 +55,161 @@
   grid-gap: 20px;
 }
 .d-service__body {
-  @include grid(repeat(4, 1fr), auto);
+  // @include grid(repeat(4, 1fr), auto);
   grid-gap: 30px;
+}
+.d-service__items {
+  @include grid(repeat(4, 1fr), 1fr);
+  grid-gap: 30px;
+}
+.d-service__item__body {
+  padding: 70px 0;
+  position: relative;
+}
+.d-service__item__text {
+  font-size: 16px;
+  color: $colorBlackLevel1;
+  padding: 0px 80px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: -11px;
+    left: 0;
+    width: 60px;
+    height: 62px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url(../img/delivery/chat.svg);
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: -28px;
+    right: 28px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      225deg,
+      rgba(111, 207, 151, 0.2) 5.81%,
+      rgba(111, 207, 151, 0) 42.17%
+    );
+    border-radius: 20px;
+    transform: rotate(45deg);
+  }
+  &-2 {
+    &::after {
+      background-image: url(../img/delivery/Group-2.svg);
+    }
+  }
+  &-3 {
+    &::after {
+      background-image: url(../img/delivery/customer-service.svg);
+    }
+  }
+  &-4 {
+    &::after {
+      background-image: url(../img/delivery/delivery-courier.svg);
+    }
+  }
+}
+.d-info__body {
+  @include grid(repeat(2, 1fr), auto);
+  grid-gap: 30px;
+}
+.d-info__item-body {
+  margin-top: 40px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    background-color: $BGButton;
+    background-image: url(../img/delivery/1-capsules.svg);
+    border-radius: 50%;
+    background-position: center;
+  }
+  &-2 {
+    &::after {
+      background-image: url(../img/delivery/2-pharmacy.svg);
+    }
+  }
+  &-3 {
+    &::after {
+      background-image: url(../img/delivery/3-ayurvedic.svg);
+    }
+  }
+  &-4 {
+    &::after {
+      background-image: url(../img/delivery/4-injection.svg);
+    }
+  }
+}
+.delivery__d-exchange {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.d-exchange__ul .articles__text {
+  position: relative;
+  padding-left: 26px;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid $BGButton;
+  }
+}
+.d-exchange__error {
+  position: relative;
+  padding-left: 35px;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0;
+    border-radius: 50%;
+    background-image: url(../img/delivery/error_outline.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}
+.delivery__d-medicine {
+  @include grid(1fr 1fr, 1fr);
+  grid-gap: 30px;
+}
+.d-medicine__text-body {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.d-medicine__title {
+  font-family: "Roboto-Bold";
+}
+.d-pickup__top {
+  margin-top: 30px;
+}
+.delivery__d-text {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.d-text__title {
+  @include fontRalewayBold(18px, 100%);
+  color: $colorBlack;
 }
