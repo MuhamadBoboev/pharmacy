@@ -1,0 +1,107 @@
+// personal-area
+.personal-area__a-main {
+  @include grid(360px 745px, 1fr);
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+.a-main__a-left {
+}
+.a-left__items {
+  border: 1px solid #e7e9eb;
+  border-radius: 5px;
+}
+.a-left__item:nth-child(even) {
+  background: #f7fafb;
+  border-radius: 5px;
+}
+.a-left__item {
+}
+.a-left__item-body {
+  padding: 0 20px;
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.a-left__text {
+  @include fontRobotoBold(14px, 100%);
+  color: $colorBlackLevel1;
+  text-transform: uppercase;
+}
+.feedback__title {
+  padding: 0;
+}
+.a-right__a-content {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.a-content__input {
+  width: 100%;
+  padding: 17px 20px;
+  border: 1px solid #c7cfe3;
+  border-radius: 30px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+.a-content__input-block {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -3px;
+    right: 30px;
+    width: 8px;
+    border-radius: 50%;
+    height: 8px;
+    background: #dd8888;
+  }
+}
+.a-content__block-inputs {
+  @include grid(1fr 2fr 1fr 2fr, 1fr);
+  grid-gap: 30px;
+}
+.a-content__input-item {
+  width: 100%;
+  display: flex;
+}
+.a-content-i {
+  width: 100%;
+  padding: 17px 20px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  border: 1px solid #c7cfe3;
+  border-radius: 30px;
+  width: 100%;
+}
+.a-main__a-right {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 70px;
+}
+.feedback__body {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  margin-top: 30px;
+  padding: 40px;
+  box-shadow: 0px 10px 40px rgba(11, 54, 29, 0.05);
+  border-radius: 20px;
+}
+.feedback__text-1 {
+  @include fontRobotoRegular(18px, 133%);
+  color: $colorBlackLevel1;
+}
+.feedback__text-2 {
+  @include fontRobotoRegular(14px, 133%);
+  color: $colorBlackLevel2;
+}
+.a-content__bottom {
+  display: flex;
+  align-items: center;
+  grid-gap: 30px;
+}
+.a-content__flex {
+  @include grid(1fr 1fr, 1fr);
+  grid-gap: 30px;
+}

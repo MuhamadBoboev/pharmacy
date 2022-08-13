@@ -70,3 +70,8 @@
 .favorites__info {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .company-page__slider {
+    align-items: center;
+  }
+}

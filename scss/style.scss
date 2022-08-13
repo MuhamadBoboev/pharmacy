@@ -63,7 +63,7 @@ div {
   margin: 0 auto;
 }
 .display-none {
-  display: none;
+  display: none !important;
 }
 /* ***** global-style ***** */
 @import "global-style.scss";
@@ -84,6 +84,8 @@ div {
 @import "contacts.scss";
 @import "payment.scss";
 @import "basket.scss";
+@import "personal-area.scss";
+@import "checkout.scss";
 @import "favorites.scss";
 @import "footer.scss";
 @import "font-size.scss";

@@ -175,3 +175,34 @@
 .text-color_green {
   color: $BGButton;
 }
+@media (max-width: 960px) {
+  .contacts__c-contacts {
+    @include grid(1fr 1fr, auto);
+  }
+  .contacts__с-call-back {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .contacts__c-contacts {
+    margin-top: 30px;
+    @include grid(1fr, auto);
+  }
+  .c-contacts__ofice-text {
+    font-size: 16px;
+  }
+  .c-contacts__main {
+    grid-gap: 30px;
+  }
+  .c-contacts__adress {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+  .c-contacts__item__title {
+    font-size: 18px;
+  }
+  .c-contacts__item__body {
+    grid-gap: 5px;
+  }
+}

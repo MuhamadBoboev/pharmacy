@@ -159,3 +159,90 @@
 .p-questions__span {
   font-weight: 700;
 }
+@media (max-width: 960px) {
+  .payment__p-installments {
+    display: flex;
+    flex-direction: column;
+  }
+  .p-right__form-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__question__input {
+    padding: 17px 20px !important;
+  }
+  .p-questions__body {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .payment__p-installments {
+    display: flex;
+    flex-direction: column;
+  }
+  .payment__p-main {
+    margin-top: 20px;
+  }
+  .footer__question__title {
+    padding: 10px 0 !important;
+  }
+  .p-installments__left {
+    grid-gap: 10px;
+  }
+  .p-right__body {
+    padding-left: 15px;
+
+    padding: 20px;
+    padding-bottom: 170px;
+  }
+  .p-installments__left {
+    grid-gap: 20px;
+  }
+  .p-right__text-block {
+    grid-gap: 20px;
+  }
+  .company-page__text {
+    font-size: 14px !important;
+  }
+  .p-right__body::before {
+    background-position: bottom left;
+    object-fit: contain;
+    opacity: 0.6;
+  }
+  .p-right__bottom-block {
+    z-index: 1;
+  }
+  .p-cash__body {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+  .p-cash__title {
+    font-size: 14px;
+  }
+  .p-partners__items {
+    @include grid(1fr 1fr, auto);
+    grid-gap: 30px;
+  }
+  .p-cash__block {
+    .p-cash__title {
+      font-size: 18px;
+    }
+  }
+  .payment__p-cash {
+    grid-gap: 20px;
+  }
+  .p-cash__block-right__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .p-cash__right-block {
+    height: 220px;
+  }
+  .p-questions__text {
+    font-size: 14px;
+  }
+  .categories-main {
+    padding-bottom: 0px;
+  }
+}

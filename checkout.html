@@ -1,19 +1,21 @@
+<!-- our-license -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <title>Избранное</title>
+
+    <title>Оформление заказа</title>
   </head>
+
   <body>
     <div class="wrapper">
-
-
       <header class="header ">
         <div class="header__top">
           <div class="_container header_container">
@@ -1706,1035 +1708,547 @@
         </div>
       </header>
 
-      <main class="main categories-main">
-        <div class="_container" >
-          <div class="page-titles  " >
-            <div class="_container" >
-              <div class="page-titles__body">
-                <a href="./index.html" class="page-titles__link active" >
-                  <div class="svg page-titles__svg page-titles__svg-1" ></div>
-                  <p class="page-titles_text" >Главная</p>
-                </a>
-                <a href="./favorites.html" class="page-titles__link" >
-                  <div class="svg page-titles__svg page-titles__svg-2" ></div>
-                  <p class="page-titles_text" >Избранное</p>
-                </a>
+      <main class="main company-page__main">
+        <div class="page-titles" >
+          <div class="_container" >
+            <div class="page-titles__body">
+              <a href="./index.html" class="page-titles__link active" >
+                <div class="svg page-titles__svg page-titles__svg-1" ></div>
+                <p class="page-titles_text" >Главная</p>
+              </a>
+              <a href="./checkout.html" class="page-titles__link" >
+                <div class="svg page-titles__svg page-titles__svg-2" ></div>
+                <p class="page-titles_text" >Оформление заказа</p>
+              </a>
+            </div>
+            <div class="page__title" >
+              <div class="product-filter__top">
+                <p class="main-title">Оформление заказа</p>
               </div>
             </div>
           </div>
-          <section class="product ">
-            <div class="product__body">
-              <div class="favorites__top" >
-                <h2 class="main-title">Избранное</h2>
-                <div class="favorites__top__right" >
-                  <a class="favorites__top__r-clean">
-                    <p class="favorites__top__r__text">очистить всё</p>
-                    <div class="svg favorites__top__r-svg" ></div>
-                  </a>
-                  <div class="favorites__top__rb-button">
-                    <a class="button favorites__top__button" >
-                      Добавить все в корзину
-                    </a>
+        </div>
+        <div class="_container checkout">
+          <div class="checkout__body">
+            <div class="checkout__left">
+              <div class="ch-main ">
+                <div class="ch-main__body">
+                  <h2 class="footer__question__title" >Контактные данные</h2>
+                  <div class="ch-main__inputs" >
+                    <div class="a-content__input-block">
+                      <input class="a-content__input" name="Surname" placeholder="Фамилия Имя Отчество">
+                    </div>
+                    <div class="a-content__input-block">
+                      <input class="a-content__input" name="mail" placeholder="Электронная почта">
+                    </div>
+                    <div class="a-content__input-block">
+                      <input class="a-content__input" name="Tell" placeholder="Ваш телефон">
+                    </div>
+                    <div class="ch-main__send" >
+                      <input class="rp-left__input" type="checkbox" id="reviewStars5" name="reviewStars5" value="newsletter">
+                      <label for="reviewStars5">
+                        <p class="ch-main__text" >
+                          Отправить SMS-уведомление
+                        </p>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="product-swiper-1"
-              >
-                <div class=" product__product-cards favorites__cards">
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-1.jpg"
-                          alt="таблетка"
-                        />
+              <div class="checkout__ch-order ">
+                <h3 class="footer__question__title" >Ваш заказ</h3>
+                <table class="ch-order__table">
+                  <tr class="ch-order__tr" >
+                    <td class="ch-order__td" >
+                      <div class="b-order__right">
+                      <div class="product-card__block__img b-order__block-img">
+                        <div class="product-card__img ch-order__p-img ">
+                          <img class="b-order__img ch-order__img" src="./img/main-content/product-3.jpg" alt="таблетка">
+                        </div>
                       </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
+                      <div class="order__right ch-order__right">
+                        <p class="product-card__title fz-16px">
+                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
                         </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
                       </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
                       </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-2.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button b-button__not-available myBtn"
-                      data-modal="myModal8" >
-                        Сообщить о наличии
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-3.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-4.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-5.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-5.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-4.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-2.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-1.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button  myBtn"
-                      data-modal="myModal4" >
-                        Купить в 1 клик
-                      </button>
-                    </div>
-                  </a>
-                  <a class=" product-card">
-                    <div class="product-card__block__img">
-                      <div class="product-card__img">
-                        <img
-                          src="./img/main-content/product-3.jpg"
-                          alt="таблетка"
-                        />
-                      </div>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__top">
-                        <p class="product-card__available fz-12px">
-                          Есть в наличии
-                        </p>
-                        <div
-                          class="stars second-block__item__stars product-card__start"
-                        >
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star"></div>
-                          <div class="svg star-small star-minus"></div>
-                        </div>
-                      </div>
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                      <ul class="product-card__ul">
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Бренд:
-                            <span class="product-card__span">Lirina</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Количество в упаковке:
-                            <span class="product-card__span">10 шт</span>
-                          </p>
-                        </li>
-                        <li class="product-card__li">
-                          <p class="product-card__text fz-12px">
-                            Код товара:
-                            <span class="product-card__span">153249</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-block">
-                        <div class="product-card__price">
-                          <p class="product-card__price__1 fz-24px">
-                            41 108 руб.
-                          </p>
-                          <p class="product-card__price__2 fz-14px">
-                            49 999 руб.
-                          </p>
-                        </div>
-                        <div class="svg product-card__busket"></div>
-                      </div>
-                    </div>
-                    <div class="product-card__bottom ">
-                      <button class="product-card__b-button b-button__not-available myBtn"
-                      data-modal="myModal8" >
-                      Сообщить о наличии
-                      </button>
-                    </div>
-                  </a>
-                </div>
-              </div>
+                    </td>
 
-            </div>
-          </section>
-          <section class="product section-margin">
-            <div class="_container product_container">
-              <section class="product section-margin">
-            <div class="_container product_container">
-              <div class="product__body">
-                <h2 class="main-title">Всегда пригодится</h2>
-                <div class="swiper-container product-swiper-1 product__products-1__items swiper-container-initialized swiper-container-horizontal">
-                  <div class="swiper-wrapper product__product-cards" id="swiper-wrapper-21c913a8d1ef87b3" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
-                    <a class="swiper-slide product-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 264.2px; margin-right: 15px;">
-                      <div class="product-card__block__img">
-                        <div class="product-card__img">
-                          <img src="./img/main-content/product-1.jpg" alt="таблетка">
+                    <td class="ch-order__td" >
+                      <div class="product-card__price ch-order__price">
+                        <p class="product-card__price__1 ch-order__card_1 fz-24px">
+                          41 108 руб.
+                        </p>
+                        <div class="ch-order__card_2" >
+                          <p class="product-card__price__2 ch-order__card_2__text fz-14px">
+                            49 999 руб.
+                          </p>
                         </div>
                       </div>
-                      <div class="product-card__body">
-                        <div class="product-card__top">
-                          <p class="product-card__available fz-12px">
-                            Есть в наличии
-                          </p>
-                          <div class="stars second-block__item__stars product-card__start">
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star-minus"></div>
-                          </div>
+                    </td>
+
+                  </tr>
+                  <tr class="ch-order__tr" >
+                    <td class="ch-order__td" >
+                      <div class="b-order__right">
+                      <div class="product-card__block__img b-order__block-img">
+                        <div class="product-card__img ch-order__p-img ">
+                          <img class="b-order__img ch-order__img" src="./img/main-content/product-2.jpg" alt="таблетка">
                         </div>
+                      </div>
+                      <div class="order__right ch-order__right">
                         <p class="product-card__title fz-16px">
                           Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
                         </p>
-                        <ul class="product-card__ul">
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Бренд:
-                              <span class="product-card__span">Lirina</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Количество в упаковке:
-                              <span class="product-card__span">10 шт</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Код товара:
-                              <span class="product-card__span">153249</span>
-                            </p>
-                          </li>
-                        </ul>
-                        <div class="product-card__price-block">
-                          <div class="product-card__price">
-                            <p class="product-card__price__1 fz-24px">
-                              41 108 руб.
-                            </p>
-                            <p class="product-card__price__2 fz-14px">
-                              49 999 руб.
-                            </p>
-                          </div>
-                          <div class="svg product-card__busket"></div>
+                      </div>
+                      </div>
+                    </td>
+
+                    <td class="ch-order__td" >
+                      <div class="product-card__price ch-order__price">
+                        <p class="product-card__price__1 ch-order__card_1 fz-24px">
+                          41 108 руб.
+                        </p>
+                        <div class="ch-order__card_2 display-none" >
+                          <p class="product-card__price__2 ch-order__card_2__text fz-14px">
+                            49 999 руб.
+                          </p>
                         </div>
                       </div>
-                      <div class="product-card__bottom ">
-                        <button class="product-card__b-button  myBtn" data-modal="myModal4">
-                          Купить в 1 клик
-                        </button>
+                    </td>
+                  </tr>
+                  <tr class="ch-order__tr" >
+                    <td class="ch-order__td" >
+                      <div class="b-order__right">
+                      <div class="product-card__block__img b-order__block-img">
+                        <div class="product-card__img ch-order__p-img ">
+                          <img class="b-order__img ch-order__img" src="./img/main-content/product-1.jpg" alt="таблетка">
+                        </div>
                       </div>
+                      <div class="order__right ch-order__right">
+                        <p class="product-card__title fz-16px">
+                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
+                        </p>
+                      </div>
+                      </div>
+                    </td>
+                    <td class="ch-order__td" >
+                      <div class="product-card__price ch-order__price">
+                        <p class="product-card__price__1 ch-order__card_1 fz-24px">
+                          41 108 руб.
+                        </p>
+                        <div class="ch-order__card_2" >
+                          <p class="product-card__price__2 ch-order__card_2__text fz-14px">
+                            49 999 руб.
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="ch-order__tr" >
+                    <td class="ch-order__td" >
+                      <div class="b-order__right">
+                      <div class="product-card__block__img b-order__block-img">
+                        <div class="product-card__img ch-order__p-img ">
+                          <img class="b-order__img ch-order__img" src="./img/main-content/product-4.jpg" alt="таблетка">
+                        </div>
+                      </div>
+                      <div class="order__right ch-order__right">
+                        <p class="product-card__title fz-16px">
+                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
+                        </p>
+                      </div>
+                      </div>
+                    </td>
+
+                    <td class="ch-order__td" >
+                      <div class="product-card__price ch-order__price">
+                        <p class="product-card__price__1 ch-order__card_1 fz-24px">
+                          41 108 руб.
+                        </p>
+                        <div class="ch-order__card_2 display-none" >
+                          <p class="product-card__price__2 ch-order__card_2__text fz-14px">
+                            49 999 руб.
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="checkout__ch-order ">
+                <h3 class="footer__question__title">Доставка</h3>
+                <div class="checkout__ch-delivery">
+                  <div class="ch-delivery__buttons" >
+                    <div class="ch-delivery__button-block">
+                      <button class="button ch-delivery__button ch-delivery__button-1" >доставка</button>
+                    </div>
+                    <div class="ch-delivery__button-block">
+                      <button class="button ch-delivery__button ch-delivery__button-2" >самовывоз</button>
+                    </div>
+                  </div>
+                  <p class="ch-delivery__text" >Выберите адрес из списка или добавьте новый:</p>
+                  <li class="availability__item">
+                    <input class="availability__item__input" type="radio" id="contactChoice1" name="availability" value="yes">
+                    <label class="availability__item__label" for="contactChoice1">Добавить новый адрес
+                  </label>
+                  <div class="ch-delivery__inputs" >
+                    <div class="city__input-block">
+                      <input type="search" class="city__input" placeholder="Найдите свой город...">
+                      <div class="svg city__input__svg"></div>
+                    </div>
+                  </div>
+                  </li>
+                </div>
+              </div>
+              <div class="checkout__ch-way" >
+                <div class="checkout__ch-order ch-confirm__body">
+                  <h3 class="footer__question__title padding-none">Самовывоз</h3>
+                  <div class="delivery__body ">
+                    <div class="popup-new__top ">
+                      <p class="popup-new__title">Выбор города</p>
+
+                    </div>
+                    <div class="city__input-block">
+                      <input type="search" class="city__input" placeholder="Найдите свой город...">
+                      <div class="svg city__input__svg"></div>
+                    </div>
+                    <div class="cities__items__container">
+                      <ul class="delivery__items">
+                        <li class="city">
+                          <a href="#" class="city__item">Москва</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Екатеринбург</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Воронеж</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Екатеринбург</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Воронеж</a>
+                        </li>
+
+                        <li class="city">
+                          <a href="#" class="city__item">Санкт-Петербург</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Тольятти</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Уфа</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Тольятти</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Уфа</a>
+                        </li>
+
+                        <li class="city">
+                          <a href="#" class="city__item">Нижний Новгород</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Омск</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Ярославль</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Омск</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Ярославль</a>
+                        </li>
+
+                        <li class="city">
+                          <a href="#" class="city__item">Ростов-на-Дону</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Волгоград</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Саратов</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Волгоград</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Саратов</a>
+                        </li>
+
+                        <li class="city">
+                          <a href="#" class="city__item">Самара</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Ставрополь</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Ижевск</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Ставрополь</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Ижевск</a>
+                        </li>
+
+                        <li class="city">
+                          <a href="#" class="city__item">Казань</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Краснодар</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Челябинск</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Краснодар</a>
+                        </li>
+                        <li class="city">
+                          <a href="#" class="city__item">Челябинск</a>
+                        </li>
+
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="delivery__d-map ">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e85957699e266655ffda294626c8a28bcfa48e8d0ebe6b1d4eaa19d34990915&amp;width=100%25&amp;height=520&amp;lang=ru_RU&amp;scroll=true"></script>
+                  </div>
+                  <div class="tags instruction-left__tags">
+                    <a href="#" class="tag">
+                      <p class="tag__text">Все аптеки  </p>
                     </a>
-                    <a class="swiper-slide product-card swiper-slide-next" role="group" aria-label="2 / 5" style="width: 264.2px; margin-right: 15px;">
-                      <div class="product-card__block__img">
-                        <div class="product-card__img">
-                          <img src="./img/main-content/product-2.jpg" alt="таблетка">
-                        </div>
-                      </div>
-                      <div class="product-card__body">
-                        <div class="product-card__top">
-                          <p class="product-card__available fz-12px">
-                            Есть в наличии
-                          </p>
-                          <div class="stars second-block__item__stars product-card__start">
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star-minus"></div>
-                          </div>
-                        </div>
-                        <p class="product-card__title fz-16px">
-                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                        </p>
-                        <ul class="product-card__ul">
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Бренд:
-                              <span class="product-card__span">Lirina</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Количество в упаковке:
-                              <span class="product-card__span">10 шт</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Код товара:
-                              <span class="product-card__span">153249</span>
-                            </p>
-                          </li>
-                        </ul>
-                        <div class="product-card__price-block">
-                          <div class="product-card__price">
-                            <p class="product-card__price__1 fz-24px">
-                              41 108 руб.
-                            </p>
-                            <p class="product-card__price__2 fz-14px">
-                              49 999 руб.
-                            </p>
-                          </div>
-                          <div class="svg product-card__busket"></div>
-                        </div>
-                      </div>
-                      <div class="product-card__bottom ">
-                        <button class="product-card__b-button b-button__not-available myBtn" data-modal="myModal8">
-                          Сообщить о наличии
-                        </button>
-                      </div>
+                    <a href="#" class="tag">
+                      <p class="tag__text">Забрать за час </p>
                     </a>
-                    <a class="swiper-slide product-card" role="group" aria-label="3 / 5" style="width: 264.2px; margin-right: 15px;">
-                      <div class="product-card__block__img">
-                        <div class="product-card__img">
-                          <img src="./img/main-content/product-3.jpg" alt="таблетка">
-                        </div>
-                      </div>
-                      <div class="product-card__body">
-                        <div class="product-card__top">
-                          <p class="product-card__available fz-12px">
-                            Есть в наличии
-                          </p>
-                          <div class="stars second-block__item__stars product-card__start">
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star-minus"></div>
-                          </div>
-                        </div>
-                        <p class="product-card__title fz-16px">
-                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                        </p>
-                        <ul class="product-card__ul">
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Бренд:
-                              <span class="product-card__span">Lirina</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Количество в упаковке:
-                              <span class="product-card__span">10 шт</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Код товара:
-                              <span class="product-card__span">153249</span>
-                            </p>
-                          </li>
-                        </ul>
-                        <div class="product-card__price-block">
-                          <div class="product-card__price">
-                            <p class="product-card__price__1 fz-24px">
-                              41 108 руб.
-                            </p>
-                            <p class="product-card__price__2 fz-14px">
-                              49 999 руб.
-                            </p>
-                          </div>
-                          <div class="svg product-card__busket"></div>
-                        </div>
-                      </div>
-                      <div class="product-card__bottom ">
-                        <button class="product-card__b-button  myBtn" data-modal="myModal4">
-                          Купить в 1 клик
-                        </button>
-                      </div>
-                    </a>
-                    <a class="swiper-slide product-card" role="group" aria-label="4 / 5" style="width: 264.2px; margin-right: 15px;">
-                      <div class="product-card__block__img">
-                        <div class="product-card__img">
-                          <img src="./img/main-content/product-4.jpg" alt="таблетка">
-                        </div>
-                      </div>
-                      <div class="product-card__body">
-                        <div class="product-card__top">
-                          <p class="product-card__available fz-12px">
-                            Есть в наличии
-                          </p>
-                          <div class="stars second-block__item__stars product-card__start">
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star-minus"></div>
-                          </div>
-                        </div>
-                        <p class="product-card__title fz-16px">
-                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                        </p>
-                        <ul class="product-card__ul">
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Бренд:
-                              <span class="product-card__span">Lirina</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Количество в упаковке:
-                              <span class="product-card__span">10 шт</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Код товара:
-                              <span class="product-card__span">153249</span>
-                            </p>
-                          </li>
-                        </ul>
-                        <div class="product-card__price-block">
-                          <div class="product-card__price">
-                            <p class="product-card__price__1 fz-24px">
-                              41 108 руб.
-                            </p>
-                            <p class="product-card__price__2 fz-14px">
-                              49 999 руб.
-                            </p>
-                          </div>
-                          <div class="svg product-card__busket"></div>
-                        </div>
-                      </div>
-                      <div class="product-card__bottom ">
-                        <button class="product-card__b-button  myBtn" data-modal="myModal4">
-                          Купить в 1 клик
-                        </button>
-                      </div>
-                    </a>
-                    <a class="swiper-slide product-card" role="group" aria-label="5 / 5" style="width: 264.2px; margin-right: 15px;">
-                      <div class="product-card__block__img">
-                        <div class="product-card__img">
-                          <img src="./img/main-content/product-5.jpg" alt="таблетка">
-                        </div>
-                      </div>
-                      <div class="product-card__body">
-                        <div class="product-card__top">
-                          <p class="product-card__available fz-12px">
-                            Есть в наличии
-                          </p>
-                          <div class="stars second-block__item__stars product-card__start">
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star"></div>
-                            <div class="svg star-small star-minus"></div>
-                          </div>
-                        </div>
-                        <p class="product-card__title fz-16px">
-                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                        </p>
-                        <ul class="product-card__ul">
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Бренд:
-                              <span class="product-card__span">Lirina</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Количество в упаковке:
-                              <span class="product-card__span">10 шт</span>
-                            </p>
-                          </li>
-                          <li class="product-card__li">
-                            <p class="product-card__text fz-12px">
-                              Код товара:
-                              <span class="product-card__span">153249</span>
-                            </p>
-                          </li>
-                        </ul>
-                        <div class="product-card__price-block">
-                          <div class="product-card__price">
-                            <p class="product-card__price__1 fz-24px">
-                              41 108 руб.
-                            </p>
-                            <p class="product-card__price__2 fz-14px">
-                              49 999 руб.
-                            </p>
-                          </div>
-                          <div class="svg product-card__busket"></div>
-                        </div>
-                      </div>
-                      <div class="product-card__bottom ">
-                        <button class="product-card__b-button  myBtn" data-modal="myModal4">
-                          Купить в 1 клик
-                        </button>
-                      </div>
+                    <a href="#" class="tag">
+                      <p class="tag__text">Сегодня</p>
                     </a>
                   </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                <div class="swiper-wrapper__buttons">
-                  <div class="product-cards__prev swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-7ec6a23a7ccdb2b1" aria-disabled="true">
-                    <div class="svg"></div>
-                  </div>
-                  <div class="product-cards__next swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-7ec6a23a7ccdb2b1" aria-disabled="true">
-                    <div class="svg"></div>
+                  <div class="l-address">
+                    <table class="address__table">
+                      <tr class="address__tr__head">
+                        <th class="address__th">СПИСОК</th>
+                        <th class="address__th">АДРЕС</th>
+                        <th class="address__th">КАРТЫ</th>
+                        <th class="address__th">ЧАСЫ РАБОТЫ</th>
+                        <th class="address__th">ТЕЛЕФОН</th>
+                      </tr>
+
+                      <tr class="address__tr__body" >
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                              <div>
+                                <p class="address__td-text">Столички</p>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                            <p class="address__td-text address__td-address">Московская обл, Ликино-Дулёво г, Калинина ул, дом № 2А
+                            </p>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                            <div class="address__td-bank">
+                              <img src="./img/svg/bank-2.svg" class="address__td-img" width="90px" height="16px" >
+                            </div>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+
+                              <p class="address__td-text ">Пн-Сб: c 08:00 до 21:00</p>
+                            </div>
+
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__last" >
+                            <div class="address__td__block" >
+                              <div>
+                                <div class="address__td__block__tell" >
+                                <p class="address__td-text address__td-tell">8 495 730 53 00</p>
+                              </div>
+                              </div>
+                            </div>
+                            <a class="address__td-show" >Показать номер</a>
+                            <div class="address__td-button-block">
+                              <a class="button footer__button">Посмотреть</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="address__tr__body" >
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                              <div>
+                                <p class="address__td-text">Столички</p>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                            <p class="address__td-text address__td-address">Московская обл, Ликино-Дулёво г, Калинина ул, дом № 2А
+                            </p>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                            <div class="address__td-bank">
+                              <img src="./img/svg/bank-2.svg" class="address__td-img" width="90px" height="16px" >
+                            </div>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+
+                              <p class="address__td-text ">Пн-Сб: c 08:00 до 21:00</p>
+                            </div>
+
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__last" >
+                            <div class="address__td__block" >
+                              <div>
+                                <div class="address__td__block__tell" >
+                                <p class="address__td-text address__td-tell">8 495 730 53 00</p>
+                              </div>
+                              </div>
+                            </div>
+                            <a class="address__td-show" >Показать номер</a>
+                            <div class="address__td-button-block">
+                              <a class="button footer__button">Посмотреть</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="address__tr__body" >
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                              <div>
+                                <p class="address__td-text">Столички</p>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                            <p class="address__td-text address__td-address">Московская обл, Ликино-Дулёво г, Калинина ул, дом № 2А
+                            </p>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+                            <div class="address__td-bank">
+                              <img src="./img/svg/bank-2.svg" class="address__td-img" width="90px" height="16px" >
+                            </div>
+                          </div>
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__block" >
+
+                              <p class="address__td-text ">Пн-Сб: c 08:00 до 21:00</p>
+                            </div>
+
+                        </td>
+                        <td class="address__td-body">
+                          <div class="address__td__last" >
+                            <div class="address__td__block" >
+                              <div>
+                                <div class="address__td__block__tell" >
+                                <p class="address__td-text address__td-tell">8 495 730 53 00</p>
+                              </div>
+                              </div>
+                            </div>
+                            <a class="address__td-show" >Показать номер</a>
+                            <div class="address__td-button-block">
+                              <a class="button footer__button">Посмотреть</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="block__button address__bottom-btn">
+                      <a href="#" class="button__link">
+                        <div class="svg button__link__svg"> </div>
+                        Показать ещё отзывы
+                      </a>
+                    </div>
                   </div>
                 </div>
-
+              </div>
+              <div class="checkout__ch-way " >
+                <div class="checkout__ch-order">
+                  <h3 class="footer__question__title">Способ оплаты</h3>
+                  <ul class="availability__items">
+                    <li class="availability__item">
+                        <input class="availability__item__input" type="radio" id="contactChoice1" name="availability" value="yes">
+                        <label class="availability__item__label ch-way__label " for="contactChoice1">Наличными или банковской картой при получении
+                        </label>
+                    </li>
+                    <li class="availability__item">
+                      <input class="availability__item__input" type="radio" id="contactChoice2" name="availability" value="no">
+                      <label class="availability__item__label ch-way__label ch-way__label_1" for="contactChoice2">Картой онлайн
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="checkout__ch-way " >
+                <div class="checkout__ch-order ch-confirm__body">
+                  <h3 class="footer__question__title padding-none">Подтвердите ваш заказ</h3>
+                  <ul сlass="ch-confirm">
+                    <li class="ch-confirm__list" >
+                      <p class="ch-confirm__text-left">Стоимость товаров без скидки:</p>
+                      <p class="ch-confirm__text-right">587 руб.</p>
+                    </li>
+                    <li class="ch-confirm__list" >
+                      <p class="ch-confirm__text-left">Скидка</p>
+                      <p class="ch-confirm__text-right">-32 руб.</p>
+                    </li>
+                    <li class="ch-confirm__list" >
+                      <p class="ch-confirm__text-left">Доставка</p>
+                      <p class="ch-confirm__text-right">0 руб.</p>
+                    </li>
+                    <li class="ch-confirm__list ch-confirm__list__last">
+                      <p class="ch-confirm__text-right">Итого:</p>
+                      <p class="ch-confirm__text-right">555 руб.</p>
+                    </li>
+                  </ul>
+                  <div class="" >
+                    <a class="button footer__button ">Оформить заказ</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
+            <div class="b-main__right">
+              <div class="b-main__right__body">
+                <h3 class="footer__question__title">Ваш заказ</h3>
+                <div class="order__text-1 order__color-green">
+                  <p class="company-page__text">Скидка</p>
+                  <p class="company-page__text">-32 руб</p>
+                </div>
+                <div class="order__text-1">
+                  <p class="company-page__text">Итого без доставки</p>
+                  <p class="company-page__text">548 руб</p>
+                </div>
+                <div class="promo-code order__color-green checkout__promo-code">
+                  <h3 class="footer__question__title promo-code__title">Промокод</h3>
+                  <div class="promo-code__search">
+                    <input class="footer__question__input promo-code__input" placeholder="Введите промо-код">
+                  </div>
+                </div>
+              </div>
             </div>
-          </section>
+          </div>
           <div class="sli">
             <div class="swiper-capabilities swiper-container-initialized swiper-container-horizontal">
-              <div class="capabilities__blocks favorites__items"  >
-                <div class=" header__bottom-item capabilitiis__items favorites__item" >
+              <div class="capabilities__blocks favorites__items">
+                <div class=" header__bottom-item capabilitiis__items favorites__item">
                   <a href="#" class="header__bottom-item__text header__bottom-item__first capabilitiis__item__body company-page__slider">
                     <div class="capabilities__img-block">
                       <div class="svg capabilities__img capabilities__img-1"></div>
@@ -2749,7 +2263,7 @@
                     </div>
                   </a>
                 </div>
-                <div class=" header__bottom-item  capabilitiis__items favorites__item " >
+                <div class=" header__bottom-item  capabilitiis__items favorites__item ">
                   <a href="#" class="header__bottom-item__text  capabilitiis__item__body company-page__slider">
                     <div class="capabilities__img-block">
                       <div class="svg capabilities__img capabilities__img-2"></div>
@@ -2764,7 +2278,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="header__bottom-item  capabilitiis__items favorites__item" >
+                <div class="header__bottom-item  capabilitiis__items favorites__item">
                   <a href="#" class="header__bottom-item__text  capabilitiis__item__body company-page__slider">
                     <div class="capabilities__img-block">
                       <div class="svg capabilities__img capabilities__img-3"></div>
@@ -2779,7 +2293,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="header__bottom-item  capabilitiis__items favorites__item" >
+                <div class="header__bottom-item  capabilitiis__items favorites__item">
                   <a href="#" class="header__bottom-item__text  capabilitiis__item__body company-page__slider">
                     <div class="capabilities__img-block">
                       <div class="svg capabilities__img capabilities__img-4"></div>
@@ -2798,7 +2312,7 @@
 
           </div>
           </div>
-
+        </div>
       </main>
       <footer class="footer">
         <div class="_container footer_container">
@@ -2972,6 +2486,7 @@
           </div>
         </div>
       </footer>
+
       <form action="https://echo.htmlacademy.ru" method="post" id="myModal1" class="modal popup popup__request ">
         <div class="popup-new ">
           <div class="popup-new__body" >
@@ -3336,12 +2851,8 @@
         </div>
       </form>
 
-
-
-    </div>
-
-    <script src="./js/script.js" > </script>
-    <script src="./js/popup.js" ></script>
-    <script src="./js/swiper-bundle.js"></script>
+      <script src="./js/popup.js" ></script>
+      <script src="./js/swiper-bundle.js"></script>
+      <script src="./js/script.js"></script>
   </body>
 </html>

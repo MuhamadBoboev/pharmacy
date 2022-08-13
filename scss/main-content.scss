@@ -412,7 +412,7 @@
   display: flex;
   flex-direction: column;
   grid-gap: 10px;
-  text-align: start;
+  text-align: center;
 }
 .capabilities__title {
   color: $colorBlack;
@@ -1133,5 +1133,14 @@
   }
   .product-card__img::after {
     font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .img-bl__item {
+    height: 40px;
+    img {
+      width: 50px;
+      height: 40px !important;
+    }
   }
 }

@@ -200,6 +200,7 @@
 }
 .d-medicine__title {
   font-family: "Roboto-Bold";
+  color: $colorBlack;
 }
 .d-pickup__top {
   margin-top: 30px;
@@ -212,4 +213,77 @@
 .d-text__title {
   @include fontRalewayBold(18px, 100%);
   color: $colorBlack;
+}
+@media (max-width: 768px) {
+  .delivery__items {
+    @include grid(repeat(3, 1fr), auto);
+  }
+  .mini-section__title {
+    font-size: 18px;
+  }
+  .d-fragmen__text-body {
+    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 230px;
+  }
+  .d-fragmen__text-body {
+    grid-gap: 10px;
+  }
+  .d-fragmen__body {
+    padding: 0px;
+  }
+  .d-fragmen__text-body::after {
+    background-position: bottom left;
+    top: 200px;
+    height: 211px;
+    left: 30px;
+  }
+  .delivery__d-delivery .mini-section__title {
+    font-size: 14px;
+  }
+  .d-service__items {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 20px;
+  }
+  .d-service__item__body {
+    padding: 10px 0;
+  }
+  .d-info__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .d-info__item-body {
+    padding-left: 0px;
+    padding-top: 50px;
+    margin-top: 0px;
+  }
+  .d-info__item-body::after {
+    width: 40px;
+    height: 40px;
+    background-size: 17px;
+  }
+  .delivery__d-exchange {
+    grid-gap: 20px;
+  }
+  .delivery__d-medicine {
+    display: flex;
+    flex-direction: column;
+  }
+  .d-fragmen__body {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .d-medicine__text-body {
+    grid-gap: 20px;
+  }
+  .d-pickup__top {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .delivery__items {
+    @include grid(repeat(2, 1fr), auto);
+  }
+}
+@media (max-width: 768px) {
 }

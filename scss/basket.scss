@@ -103,7 +103,7 @@
   padding-bottom: 20px;
 }
 .promo-code__title {
-  padding: 20px;
+  padding: 20px 0;
 }
 .promo-code__search {
   position: relative;
@@ -134,4 +134,67 @@
   @include grid(repeat(4, 1fr), 1fr);
 }
 .basket__bottom {
+}
+
+@media (max-width: 1200px) {
+  .basket__b-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 960px) {
+  .b-main__left__items {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+  .b-main__left__item {
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(11, 54, 29, 0.1);
+    border: 1px solid #f7fafb;
+    border-radius: 5px;
+  }
+  .b-order__right {
+    display: flex;
+    flex-direction: column;
+  }
+  .b-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .b-order__price {
+    justify-content: center;
+  }
+  .order__price {
+    order: 1;
+  }
+}
+@media (max-width: 768px) {
+  .b-order__price {
+    grid-gap: 20px;
+  }
+  .b-order__block-img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .b-order__img-item {
+    max-width: 228px;
+    max-height: 130px;
+  }
+  .b-main__right__body .footer__question__title {
+    padding: 20px 0 !important;
+  }
+  .promo-code__input {
+    height: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .b-order__price {
+    justify-content: space-between;
+  }
+  .b-order__top {
+    justify-content: center;
+    padding: 15px;
+    padding-top: 20px;
+  }
 }
