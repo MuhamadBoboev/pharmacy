@@ -372,6 +372,13 @@ input::placeholder {
     width: 100%;
     // padding-top: 280px;
   }
+  .order {
+    flex-direction: column;
+  }
+  .order__form {
+    display: flex;
+    flex-direction: column;
+  }
   .cities__items {
     @include grid(repeat(3, 1fr), auto);
   }

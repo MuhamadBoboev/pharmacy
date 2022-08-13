@@ -581,7 +581,10 @@
   border-radius: 5px;
   letter-spacing: 5%;
 }
-
+.header__bottom-item {
+  display: flex;
+  align-items: center;
+}
 .header__bottom-item__first {
   color: $colorWhite;
   background-color: $colorCyen;
@@ -596,7 +599,8 @@
 }
 .header__bottom-item__text {
   padding: 6px 10px 8px 10px;
-  display: block;
+  display: flex;
+  align-items: center;
   height: 100%;
   text-align: center;
 }

@@ -22,7 +22,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   searchHeader();
 });
-document.addEventListener("DOMContentLoaded", () => {});
+document.addEventListener("DOMContentLoaded", () => {
+  let mainBLockShow = document.querySelectorAll(".MBShow");
+
+  let showBtn = document.querySelectorAll(".SBtn");
+  showBtn.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      // console.log("asd");
+      // console.log(el.closest(".MBShow"));
+      el.classList.toggle("active");
+      let blockContent = el.closest(".MBShow");
+      let blockShow = blockContent.querySelectorAll(".BShow");
+      blockShow.forEach((event) => {
+        event.classList.toggle("active");
+      });
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const users = Array.from(document.querySelectorAll(".user"));
+});
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".header__burger");
   const menu = document.querySelector(".header-mobile__menu");

@@ -19,9 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   productPage();
   let swImgBl = new Swiper(".img-bl__container", {
-    slidesPerView: 3.5,
-    spaceBetween: 30,
+    slidesPerView: 5,
+    spaceBetween: 15,
     // slidesView: 4,
+    breakpoints: {
+      600: {
+        slidesPerView: 6,
+        spaceBetween: 15,
+      },
+      961: {
+        slidesPerView: 5,
+      },
+      1201: {
+        slidesPerView: 5,
+      },
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -103,11 +115,35 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 document.addEventListener("DOMContentLoaded", () => {
   new ImageZoom(document.getElementById("slide-image"), {
-    width: 400,
-    height: 400,
+    spaceBetween: 10,
     scale: 0.3,
-    zoomWidth: 450,
-    zoomStyle: "width: 400px; height: 400px;",
+    zoomWidth: 250,
+    zoomStyle: "width: 200px; height: 200px;",
     offset: { vertical: 0, horizontal: 30 },
+    mousewheel: {
+      sensitivity: 1,
+    },
+    breakpoints: {
+      600: {},
+      961: {
+        spaceBetween: 30,
+      },
+      1201: {},
+    },
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  let imgMini = document.querySelectorAll(".img-bl__item img");
+  let BigImg = document.querySelector(".img-bl__big-img__block img");
+  let zoomImg = document.querySelector(".js-image-zoom__zoomed-image");
+  imgMini.forEach((el) => {
+    el.addEventListener("mouseover", (e) => {
+      // console.log(el);
+      console.log(el.src);
+      console.log(BigImg.src);
+      zoomImg.style.backgroundImage = "url(" + el.src + ")";
+      BigImg.src = el.src;
+      // "url(" + el.src + ")";
+    });
   });
 });

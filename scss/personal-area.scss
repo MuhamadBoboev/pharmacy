@@ -105,3 +105,24 @@
   @include grid(1fr 1fr, 1fr);
   grid-gap: 30px;
 }
+.a-ch-order__price {
+  display: flex;
+  flex-direction: column !important;
+  grid-gap: 3px !important;
+}
+// .a-order__text-1 {
+//   @include fontRobotoBold(14px, 100%);
+//   color: $colorBlackLevel2;
+// }
+// .a-order__text-3 {
+//   @include fontRobotoBold(14px, 100%);
+//   color: $BGButton;
+// }
+// .ch-order__tr {
+//   display: contents !important;
+// }
+// .a-ch-order__td {
+//   position: relative !important;
+//   display: flex;
+//   flex-direction: column;
+// }

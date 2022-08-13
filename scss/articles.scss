@@ -87,14 +87,16 @@
   grid-gap: 30px;
 }
 .c-main__title__text {
+  padding: 10px;
   @include fontRobotoBold(18px, 100%);
   color: $colorBlack;
   position: relative;
+  cursor: pointer;
   display: block;
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 13px;
     right: 0;
     width: 15px;
     height: 9px;
@@ -103,6 +105,7 @@
   }
 }
 .a-content-main__left {
+  height: max-content;
   background: #f7fafb;
   border-radius: 20px;
 }
@@ -113,6 +116,7 @@
   grid-gap: 20px;
 }
 .c-main__items {
+  height: max-content;
   display: flex;
   flex-direction: column;
   // grid-gap: 5px;
@@ -488,6 +492,12 @@
   }
 }
 @media (max-width: 768px) {
+  .a-video__left {
+    grid-gap: 15px;
+  }
+  .a-video__body {
+    margin-top: 20px;
+  }
   .a-main-content {
     padding: 20px;
     padding-top: 115px;
@@ -631,4 +641,114 @@
   }
 }
 @media (max-width: 768px) {
+}
+.a-table {
+  width: 100%;
+}
+.a-table__tr-1 {
+  background-color: $BGButton;
+}
+.a-table__td__1 {
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/articles/chevron_down.svg);
+}
+.a-table__td-1 {
+  padding: 16px;
+  color: $colorWhite;
+  @include fontRobotoRegular(14px, 100%);
+}
+.a-table__td {
+  position: relative;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #e6e7e9;
+  }
+  &::after {
+    top: 0;
+  }
+  &::before {
+    bottom: 0;
+  }
+}
+.a-table__tbody {
+  .a-table__tr:nth-child(odd) {
+    background-color: #f9fafc;
+  }
+}
+.a-table__tr {
+  cursor: pointer;
+}
+.a-table__td {
+  padding: 16px;
+  @include fontRobotoRegular(14px, 100%);
+  color: $colorBlack;
+}
+
+@media (max-width: 768px) {
+  .a-table__block {
+    margin: 0px -15px;
+  }
+  .a-table__tr-1 {
+    .a-table__td-1:nth-child(n + 4) {
+      background-color: red;
+      display: none;
+    }
+  }
+  .a-table__tr {
+    .a-table__td:nth-child(n + 4) {
+      background-color: red;
+      display: none;
+    }
+  }
+  .people-review__top {
+    @include grid(1fr 1fr, auto);
+  }
+  .people-review__like-block {
+    // order: 2;
+    grid-column-start: 2fr;
+    grid-column-end: 2fr;
+    grid-row-start: 2fr;
+    grid-row-end: 2fr;
+  }
+  .people-review__date {
+    // order: 3;
+  }
+  .second-block__item__stars {
+    // order: 4;
+  }
+  .people-review__answer-1 {
+    display: none;
+  }
+  .people-revuew__body {
+    padding-bottom: 20px;
+  }
+  .people-review__answer-2 {
+    display: block;
+  }
+  .reviews_feedback__body {
+    padding: 0px;
+  }
+  .people-reviews .people-review:nth-child(even) {
+    padding: 20px;
+  }
+}
+.c-main__title__text::before {
+  transform: rotate(180deg);
+}
+.active::before {
+  transform: rotate(0deg);
+}
+.c-main__items.active {
+  height: 0px;
+  transition: all 5s ease-out;
+  overflow: hidden;
 }
