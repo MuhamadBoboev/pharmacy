@@ -1754,10 +1754,11 @@
           </div>
           <div class="a-main__a-right" >
             <form class="a-right__a-content" id="a-content" action="https://echo.htmlacademy.ru" method="post">
-              <h3 class="footer__question__title feedback__title">Личный кабинет</h3>
+              <h3 class="footer__question__title feedback__title">Личный данные</h3>
               <div class="a-content__input-block" >
                 <input class="a-content__input" name="Surname" placeholder="Укажите фамилию, имя и отчество" >
               </div>
+              <p class="a-right__suptitle">Дата рождения</p>
               <div class="a-content__block-inputs">
                 <div class="a-content__input-item">
                   <input class="a-content-i" type="number" placeholder="1" name="date-birth" value="1" >
@@ -1766,7 +1767,7 @@
                   <input class="a-content-i" type="month" placeholder="Январь" name="month" >
                 </div>
                 <div class="a-content__input-item">
-                  <input class="a-content-i" type="date" placeholder="Год" name="yers" >
+                  <input class="a-content-i" placeholder="Год" name="yers" >
                 </div>
                 <div class="a-content__input-item">
                   <input class="a-content-i" type="text" placeholder="Пол" name="sex" >
@@ -1785,7 +1786,7 @@
                 <input class="a-content__input" name="Surname" placeholder="Подтверждение" >
               </div>
               <div class="a-content__block-button" >
-                <button type="submit" class="button" >Сохранить</button>
+                <button type="submit" class="button a-content__button" >Сохранить</button>
               </div>
             </form>
             <div id="order" class="checkout__ch-order display-none">
@@ -1830,69 +1831,18 @@
                 </tr>
               </tbody></table>
             </div>
-            <div class="checkout__ch-order ">
+
+            <div class="checkout__ch-order personal-area__order-b">
               <h3 class="footer__question__title">Ваш заказ</h3>
               <table class="ch-order__table">
-                <tbody><tr class="ch-order__tr">
-                  <td class="ch-order__td">
-                    <div class="b-order__right">
-                    <div class="product-card__block__img b-order__block-img">
-                      <div class="product-card__img ch-order__p-img ">
-                        <img class="b-order__img ch-order__img" src="./img/main-content/product-3.jpg" alt="таблетка">
-                      </div>
-                    </div>
-                    <div class="order__right ch-order__right">
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                    </div>
-                    </div>
-                  </td>
-
-                  <td class="ch-order__td">
-                    <div class="product-card__price ch-order__price a-ch-order__price">
-                      <p class="product-card__price__1 ch-order__card_1 fz-24px">
-                        41 108 руб.
-                      </p>
-                      <div class="ch-order__card_2">
-                        <p class="product-card__price__2 ch-order__card_2__text fz-14px">
-                          49 999 руб.
-                        </p>
-                      </div>
-                    </div>
-                  </td>
-
-                </tr>
-                <tr class="ch-order__tr">
-                  <td class="ch-order__td">
-                    <div class="b-order__right">
-                    <div class="product-card__block__img b-order__block-img">
-                      <div class="product-card__img ch-order__p-img ">
-                        <img class="b-order__img ch-order__img" src="./img/main-content/product-2.jpg" alt="таблетка">
-                      </div>
-                    </div>
-                    <div class="order__right ch-order__right">
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                    </div>
-                    </div>
-                  </td>
-
-                  <td class="ch-order__td">
-                    <div class="product-card__price ch-order__price">
-                      <p class="product-card__price__1 ch-order__card_1 fz-24px">
-                        41 108 руб.
-                      </p>
-                      <div class="ch-order__card_2 display-none">
-                        <p class="product-card__price__2 ch-order__card_2__text fz-14px">
-                          49 999 руб.
-                        </p>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="ch-order__tr">
+                <thead class="ch-order__thead">
+                  <tr class="ch-order__tr-1">
+                    <td class="ch-order__td-1"><p class="ch-order__td-1_1" >16.12.2021</p> <p class="ch-order__td-1_2">Заказ №:154544516</p></td>
+                    <td class="ch-order__td-2">Выполнен</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="ch-order__tr">
                   <td class="ch-order__td">
                     <div class="b-order__right">
                     <div class="product-card__block__img b-order__block-img">
@@ -1907,9 +1857,10 @@
                     </div>
                     </div>
                   </td>
-                  <td class="ch-order__td">
-                    <div class="product-card__price ch-order__price">
-                      <p class="product-card__price__1 ch-order__card_1 fz-24px">
+
+                  <td class="ch-order__td ">
+                    <div class="product-card__price ch-order__price pa__order__price">
+                      <p class="product-card__price__1 ch-order__card_1 pa__order__card_1 fz-24px">
                         41 108 руб.
                       </p>
                       <div class="ch-order__card_2">
@@ -1919,36 +1870,88 @@
                       </div>
                     </div>
                   </td>
-                </tr>
-                <tr class="ch-order__tr">
-                  <td class="ch-order__td">
-                    <div class="b-order__right">
-                    <div class="product-card__block__img b-order__block-img">
-                      <div class="product-card__img ch-order__p-img ">
-                        <img class="b-order__img ch-order__img" src="./img/main-content/product-4.jpg" alt="таблетка">
-                      </div>
-                    </div>
-                    <div class="order__right ch-order__right">
-                      <p class="product-card__title fz-16px">
-                        Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
-                      </p>
-                    </div>
-                    </div>
-                  </td>
 
-                  <td class="ch-order__td">
-                    <div class="product-card__price ch-order__price">
-                      <p class="product-card__price__1 ch-order__card_1 fz-24px">
-                        41 108 руб.
-                      </p>
-                      <div class="ch-order__card_2 display-none">
-                        <p class="product-card__price__2 ch-order__card_2__text fz-14px">
-                          49 999 руб.
+                  </tr>
+                  <tr class="ch-order__tr">
+                    <td class="ch-order__td">
+                      <div class="b-order__right">
+                      <div class="product-card__block__img b-order__block-img">
+                        <div class="product-card__img ch-order__p-img ">
+                          <img class="b-order__img ch-order__img" src="./img/main-content/product-2.jpg" alt="таблетка">
+                        </div>
+                      </div>
+                      <div class="order__right ch-order__right">
+                        <p class="product-card__title fz-16px">
+                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
                         </p>
                       </div>
-                    </div>
-                  </td>
-                </tr>
+                      </div>
+                    </td>
+
+                    <td class="ch-order__td ">
+                      <div class="product-card__price ch-order__price pa__order__price">
+                        <p class="product-card__price__1 ch-order__card_1 pa__order__card_1 fz-24px">
+                          41 108 руб.
+                        </p>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr class="ch-order__tr">
+                    <td class="ch-order__td">
+                      <div class="b-order__right">
+                      <div class="product-card__block__img b-order__block-img">
+                        <div class="product-card__img ch-order__p-img ">
+                          <img class="b-order__img ch-order__img" src="./img/main-content/product-3.jpg" alt="таблетка">
+                        </div>
+                      </div>
+                      <div class="order__right ch-order__right">
+                        <p class="product-card__title fz-16px">
+                          Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
+                        </p>
+                      </div>
+                      </div>
+                    </td>
+
+                    <td class="ch-order__td ">
+                      <div class="product-card__price ch-order__price pa__order__price">
+                        <p class="product-card__price__1 ch-order__card_1 pa__order__card_1 fz-24px">
+                          41 108 руб.
+                        </p>
+                        <div class="ch-order__card_2">
+                          <p class="product-card__price__2 ch-order__card_2__text fz-14px">
+                            49 999 руб.
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr class="ch-order__tr">
+                      <td class="ch-order__td">
+                        <div class="b-order__right">
+                        <div class="product-card__block__img b-order__block-img">
+                          <div class="product-card__img ch-order__p-img ">
+                            <img class="b-order__img ch-order__img" src="./img/main-content/product-4.jpg" alt="таблетка">
+                          </div>
+                        </div>
+                        <div class="order__right ch-order__right">
+                          <p class="product-card__title fz-16px">
+                            Велсон таблетки покрыт. плен. об. 3 мг, 30 шт.
+                          </p>
+                        </div>
+                        </div>
+                      </td>
+
+                      <td class="ch-order__td ">
+                        <div class="product-card__price ch-order__price pa__order__price">
+                          <p class="product-card__price__1 ch-order__card_1 pa__order__card_1 fz-24px">
+                            41 108 руб.
+                          </p>
+                        </div>
+                      </td>
+
+                  </tr>
               </tbody></table>
             </div>
             <div class=" feedback" id="feedback" >
@@ -1974,7 +1977,7 @@
                   <input class="a-content-i" type="text" placeholder="Текст сообщения" name="mss">
                 </div>
                 <div class="a-content__bottom" >
-                  <button type="submit" class="button">Сохранить</button>
+                  <button type="submit" class="button a-content__button">Сохранить</button>
                   <p class="popup-new__bottom-text call-back__text">Нажимая на кнопку, вы соглашаетесь на обработку <u><a href="#" class="popup-new__bottom-span">персональных данных</a></u></p>
                 </div>
               </div>

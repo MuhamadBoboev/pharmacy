@@ -21,6 +21,29 @@
   display: flex;
   flex-direction: column;
 }
+.categories-block__items {
+  & > li:nth-child(n + 4) {
+    display: none;
+  }
+}
+.categories-block__item-svg-2 {
+  width: 9px !important;
+  height: 8px !important;
+  background-size: 12px !important;
+  top: 23px !important;
+  background-image: url(../img/svg/chevron_duo_down.svg) !important;
+}
+// .categories-block__items__button .active {
+//   background-color: red;
+//   .categories-block__item-svg {
+//     transform: rotate(180deg);
+//   }
+// }
+.categories-block__items.active {
+  & > li:nth-child(n + 4) {
+    display: block;
+  }
+}
 .categories-block__item {
   position: relative;
 }
@@ -183,12 +206,20 @@
 }
 .categories__filter {
   position: relative;
+  display: none;
+}
+.categories__filter.active {
+  display: block;
 }
 .filter__values {
+  display: none !important;
   @include grid(1fr 1fr, 1fr);
   grid-gap: 10px;
   width: 100%;
   margin-top: 10px;
+}
+.filter__values.active {
+  display: grid !important;
 }
 .filter__values__input {
   input {
@@ -201,9 +232,12 @@
 .country__items {
   padding: 20px 0;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   grid-gap: 10px;
+}
+.country__items.active {
+  display: flex;
 }
 .filter__input {
   appearance: none;
@@ -241,7 +275,6 @@
 // }
 
 .categories__availability {
-  padding-bottom: 25px;
 }
 .availability__item__input {
   -webkit-appearance: none;
@@ -312,12 +345,23 @@
   width: max-content;
 }
 .availability__items {
-  display: flex;
+  display: none;
   flex-direction: column;
   grid-gap: 10px;
+  padding-bottom: 25px;
+}
+.availability__items.active {
+  display: flex;
 }
 .impact__search {
   padding: 20px 0;
+  display: none;
+}
+.filter__checkbox-label {
+  cursor: pointer;
+}
+.impact__search.active {
+  display: block;
 }
 .impact__search__body {
   position: relative;
@@ -505,6 +549,7 @@
 .rc-button {
   display: none;
 }
+
 @media (max-width: 960px) {
   .categories-block__item-body:hover .position-items__position-block {
     display: none;

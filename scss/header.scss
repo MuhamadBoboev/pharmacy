@@ -529,6 +529,7 @@
   .header__catalogs {
   }
   .header__catalog__li {
+    display: inline-table !important;
     width: 100%;
     outline: 1px solid rgba(255, 255, 255, 0.05);
   }

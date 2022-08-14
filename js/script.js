@@ -24,12 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 document.addEventListener("DOMContentLoaded", () => {
   let mainBLockShow = document.querySelectorAll(".MBShow");
-
   let showBtn = document.querySelectorAll(".SBtn");
   showBtn.forEach((el) => {
     el.addEventListener("click", (e) => {
       // console.log("asd");
-      // console.log(el.closest(".MBShow"));
+      console.log(el.closest(".MBShow"));
       el.classList.toggle("active");
       let blockContent = el.closest(".MBShow");
       let blockShow = blockContent.querySelectorAll(".BShow");
