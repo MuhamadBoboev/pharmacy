@@ -1765,7 +1765,7 @@
                   <a data-modal="myModal9" class="myBtn cb-button categories__left__b-button-top" >
                     <div class="header__contacts__block__text__active cb-button-top">
                       <div class="svg header__contacts__block__svg  "></div>
-                      <p>Мы вам перезвоним</p>
+                      <p>показать Все категории</p>
                     </div>
                   </a>
                   <a data-modal="myModal10" class="myBtn cb-button categories__left__b-button-bottom" >
@@ -2204,17 +2204,18 @@
                         <div class="svg filter__item-svg" ></div>
                       </div>
                         <div class="filter__values BShow">
-                          <div class="filter__values__input">
-                            <input type="number" placeholder="от 2365" >
+                          <div class="range-slider__prices">
+                            <div class="range-slider__price__start">
+                              <input class="range-slider-input-start"  placeholder="от 2365" >
+                            </div>
+                            <div class="range-slider__price__start">
+                              <input class="range-slider-input-end"  placeholder="до 865878" >
+                            </div>
                           </div>
-                          <div class="filter__values__input">
-                            <input type="number" placeholder="до 865878" >
-                          </div>
-                        </div>
-                        <div class="categories__filter BShow" >
-                          <div class="slider-tract" ></div>
-                          <input class="filter__input" type="range" min='0' max="100" value="30" id="filter-1" >
-                          <input class="filter__input" type="range" min='0' max="100" value="70" id="filter-2" >
+                          <section class="range-slider">
+                            <input class="rangeValues__input-1" value="2365" min="2365" max="865878" step="1" type="range">
+                            <input class="rangeValues__input-2" value="606700" min="2365" max="865878" step="1" type="range">
+                          </section>
                         </div>
                     </div>
                     <div class="line__top-bottom categories__country MBShow" >
@@ -2344,11 +2345,11 @@
                       <ul class="availability__items BShow">
                         <li class="availability__item">
                           <input class="availability__item__input" type="radio" id="contactChoice1" name="availability" value="yes">
-                          <label class="availability__item__label" for="contactChoice1">В наличии</labe>
+                          <label class="availability__item__label ava_label-1" for="contactChoice1">В наличии</labe>
                         </li>
                         <li class="availability__item">
                           <input class="availability__item__input" type="radio" id="contactChoice2" name="availability" value="no">
-                          <label class="availability__item__label" for="contactChoice2">Под заказ</labe>
+                          <label class="availability__item__label ava_label-2" for="contactChoice2">Под заказ</labe>
                         </li>
                       </ul>
                     </div>
@@ -5898,413 +5899,426 @@
                 <div class='svg popup-new__close__svg' ></div>
               </a>
             </div>
-            <ul class="categories-block__items">
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Акушерство, гинекология
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+            <div class="categories__categories-block MBShow">
+              <div class="section__block-title">
+                <p class="section__title">Категории</p>
+              </div>
+              <ul class="categories-block__items BShow">
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Акушерство, гинекология
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Аллергия
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Аллергия
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Анестезия, реанимация
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Анестезия, реанимация
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Антибиотики
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Антибиотики
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Болезни крови
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Болезни крови
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Боль, температура
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Боль, температура
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Геморрой
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Геморрой
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Глаза
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Глаза
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Глисты, вши, чесотка
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Глисты, вши, чесотка
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Гомеопатия
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Гомеопатия
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Диабет
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Диабет
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Диагностические средства
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Диагностические средства
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Дыхательная система
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Дыхательная система
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Желудок, кишечник, печень
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Желудок, кишечник, печень
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="categories-block__item">
-                <a href="#" class="categories-block__item-body">
-                  <p>
-                    Зубы и рот
-                  </p>
-                  <div class="svg categories-block__item-svg"></div>
-                  <div class="position-items__position-block">
-                    <ul class="position-items">
-                      <li class="position-item__block">
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="categories-block__item">
+                  <a href="#" class="categories-block__item-body">
+                    <p>
+                      Зубы и рот
+                    </p>
+                    <div class="svg categories-block__item-svg"></div>
+                    <div class="position-items__position-block">
+                      <ul class="position-items">
+                        <li class="position-item__block">
+                              <p class="categories-block__item-body position-item__link">
+                                Местные обезболивающие
+                              </p>
+                        </li>
+                        <li class="position-item__block">
                             <p class="categories-block__item-body position-item__link">
                               Местные обезболивающие
                             </p>
-                      </li>
-                      <li class="position-item__block">
+                        </li>
+                        <li class="position-item__block">
                           <p class="categories-block__item-body position-item__link">
                             Местные обезболивающие
                           </p>
-                      </li>
-                      <li class="position-item__block">
-                        <p class="categories-block__item-body position-item__link">
-                          Местные обезболивающие
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="categories-block__button">
+                <a class="categories-block__items__button SBtn">
+                  <p>
+                    показать Все категории
+                  </p>
+                  <div class="svg categories-block__item-svg categories-block__item-svg-2"></div>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </form>
@@ -6319,120 +6333,162 @@
             </div>
             <div class="categories__filter-block ">
 
-              <div class="line__top-bottom filter__block">
-                <div class="filter__title">Цена
+
+              <div class="line__top-bottom section__block-title">
+                <p class="section__title">Фильтр
+                </p>
+              </div>
+              <div class="line__top-bottom filter__block MBShow">
+                <div class="filter__title SBtn">Цена
                   <div class="svg filter__item-svg"></div>
                 </div>
-                  <div class="filter__values">
-                    <div class="filter__values__input">
-                      <input type="number" placeholder="от 2365">
+                  <div class="filter__values BShow">
+                    <div class="range-slider__prices">
+                      <div class="range-slider__price__start">
+                        <input class="range-slider-input-start" placeholder="от 2365">
+                      </div>
+                      <div class="range-slider__price__start">
+                        <input class="range-slider-input-end" placeholder="до 865878">
+                      </div>
                     </div>
-                    <div class="filter__values__input">
-                      <input type="number" placeholder="до 865878">
-                    </div>
-                  </div>
-                  <div class="categories__filter">
-                    <div class="slider-tract"></div>
-                    <input class="filter__input" type="range" min="0" max="100" value="30" id="filter-1">
-                    <input class="filter__input" type="range" min="0" max="100" value="70" id="filter-2">
+                    <section class="range-slider">
+                      <input class="rangeValues__input-1" value="2365" min="2365" max="865878" step="1" type="range">
+                      <input class="rangeValues__input-2" value="606700" min="2365" max="865878" step="1" type="range">
+                    </section>
                   </div>
               </div>
-              <div class="line__top-bottom categories__country">
-                <div class="filter__title">Страна
+              <div class="line__top-bottom categories__country MBShow">
+                <div class="filter__title SBtn">Страна
                   <div class="svg filter__item-svg"></div>
                 </div>
-                <ul class="country__items">
+                <ul class="country__items BShow">
 
                   <li class="filter-option filter-checkbox">
-                    <input class="rp-left__input" type="checkbox" name="m-country-2" id="m-country-2" value="qqwqqq">
-                    <label class="filter__checkbox-label " for="m-country-2">Беларусь</label>
+                    <input class="rp-left__input" type="checkbox" name="country-2" id="country-2" value="qqwqqq">
+                    <label class="filter__checkbox-label " for="country-2">Беларусь</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="rp-left__input" type="checkbox" name="m-country-3" id="m-country-3" value="qqqqq">
-                    <label class="filter__checkbox-label" for="m-country-3">Германия</label>
+                    <input class="rp-left__input" type="checkbox" name="country-3" id="country-3" value="qqqqq">
+                    <label class="filter__checkbox-label" for="country-3">Германия</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="rp-left__input" type="checkbox" name="m-country-4" id="m-country-4" value="qqqqq">
-                    <label class="filter__checkbox-label" for="m-country-4">Греция</label>
+                    <input class="rp-left__input" type="checkbox" name="country-4" id="country-4" value="qqqqq">
+                    <label class="filter__checkbox-label" for="country-4">Греция</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="rp-left__input" type="checkbox" name="m-country-5" id="m-country-5" value="qqqqq">
-                    <label class="filter__checkbox-label" for="m-country-5">Ирландия</label>
+                    <input class="rp-left__input" type="checkbox" name="country-5" id="country-5" value="qqqqq">
+                    <label class="filter__checkbox-label" for="country-5">Ирландия</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="rp-left__input" type="checkbox" name="m-country-6" id="m-country-6" value="qqqqq">
-                    <label class="filter__checkbox-label" for="m-country-6">Испания</label>
+                    <input class="rp-left__input" type="checkbox" name="country-6" id="country-6" value="qqqqq">
+                    <label class="filter__checkbox-label" for="country-6">Испания</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="rp-left__input" type="checkbox" name="m-country-7" id="m-country-7" value="qqqqq">
-                    <label class="filter__checkbox-label" for="m-country-7">Италия</label>
+                    <input class="rp-left__input" type="checkbox" name="country-7" id="country-7" value="qqqqq">
+                    <label class="filter__checkbox-label" for="country-7">Италия</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="rp-left__input" type="checkbox" name="m-country-8" id="m-country-8" value="qqqqq">
-                    <label class="filter__checkbox-label" for="m-country-8">Китай</label>
+                    <input class="rp-left__input" type="checkbox" name="country-8" id="country-8" value="qqqqq">
+                    <label class="filter__checkbox-label" for="country-8">Китай</label>
                   </li>
                 </ul>
               </div>
-              <div class="line__top-bottom categories__impact">
-                <div class="filter__title">Воздействие
+              <div class="line__top-bottom categories__impact MBShow">
+                <div class="filter__title SBtn">Воздействие
                   <div class="svg filter__item-svg"></div>
                 </div>
-                <div class="impact__search">
+                <div class="impact__search BShow">
                   <div class="impact__search__body">
                     <input class="impact__search__input" type="search" placeholder="Поиск...">
                   </div>
                   <ul class="country__items">
 
                     <li class="filter-option filter-checkbox">
-                      <input class="rp-left__input" type="checkbox" name="m-impact-2" id="m-impact-2">
-                      <label class="filter__checkbox-label" for="m-impact-2">Для бронхов
+                      <input class="rp-left__input" type="checkbox" name="impact-2" id="impact-2">
+                      <label class="filter__checkbox-label" for="impact-2">Для бронхов
                       </label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="rp-left__input" type="checkbox" name="m-impact-3" id="m-impact-3">
-                      <label class="filter__checkbox-label" for="m-impact-3">Для волос
+                      <input class="rp-left__input" type="checkbox" name="impact-3" id="impact-3">
+                      <label class="filter__checkbox-label" for="impact-3">Для волос
                       </label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="rp-left__input" type="checkbox" name="m-impact-4" id="m-impact-4">
-                      <label class="filter__checkbox-label" for="m-impact-4">Для глаз
+                      <input class="rp-left__input" type="checkbox" name="impact-4" id="impact-4">
+                      <label class="filter__checkbox-label" for="impact-4">Для глаз
                       </label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="rp-left__input" type="checkbox" name="m-impact-5" id="m-impact-5">
-                      <label class="filter__checkbox-label" for="m-impact-5">Для горла
+                      <input class="rp-left__input" type="checkbox" name="impact-5" id="impact-5">
+                      <label class="filter__checkbox-label" for="impact-5">Для горла
                       </label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="rp-left__input" type="checkbox" name="m-impact-6" id="m-impact-6">
-                      <label class="filter__checkbox-label" for="m-impact-6">Для губ
+                      <input class="rp-left__input" type="checkbox" name="impact-6" id="impact-6">
+                      <label class="filter__checkbox-label" for="impact-6">Для губ
                       </label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="rp-left__input" type="checkbox" name="m-impact-7" id="m-impact-7">
-                      <label class="filter__checkbox-label" for="m-impact-7">Для дыхательных путей
+                      <input class="rp-left__input" type="checkbox" name="impact-7" id="impact-7">
+                      <label class="filter__checkbox-label" for="impact-7">Для дыхательных путей
                       </label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="rp-left__input" type="checkbox" name="m-impact-8" id="m-impact-8">
-                      <label class="filter__checkbox-label" for="m-impact-8">Для желудка</label>
+                      <input class="rp-left__input" type="checkbox" name="impact-8" id="impact-8">
+                      <label class="filter__checkbox-label" for="impact-8">Для желудка</label>
                     </li>
                   </ul>
                 </div>
+                <ul class="country__items BShow">
 
+                  <li class="filter-option filter-checkbox">
+                    <input class="rp-left__input" type="checkbox" name="f-impact-2" id="f-impact-2" value="qqwqqq">
+                    <label class="filter__checkbox-label " for="f-impact-2">Для бронхов
+                    </label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="rp-left__input" type="checkbox" name="f-impact-3" id="f-impact-3" value="qqqqq">
+                    <label class="filter__checkbox-label" for="f-impact-3">Для волос
+                    </label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="rp-left__input" type="checkbox" name="f-impact-4" id="f-impact-4" value="qqqqq">
+                    <label class="filter__checkbox-label" for="f-impact-4">Для глаз
+                    </label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="rp-left__input" type="checkbox" name="f-impact-5" id="f-impact-5" value="qqqqq">
+                    <label class="filter__checkbox-label" for="f-impact-5">Для горла
+                    </label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="rp-left__input" type="checkbox" name="f-impact-6" id="f-impact-6" value="qqqqq">
+                    <label class="filter__checkbox-label" for="f-impact-6">Для губ
+                    </label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="rp-left__input" type="checkbox" name="f-impact-7" id="f-impact-7" value="qqqqq">
+                    <label class="filter__checkbox-label" for="f-impact-7">Для дыхательных путей
+                    </label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="rp-left__input" type="checkbox" name="f-impact-8" id="f-impact-8" value="qqqqq">
+                    <label class="filter__checkbox-label" for="f-impact-8">Для желудка</label>
+                  </li>
+                </ul>
               </div>
-              <div class="line__top-bottom categories__availability">
-                <div class="filter__title">Страна
+              <div class="line__top-bottom categories__availability MBShow">
+                <div class="filter__title SBtn">Страна
                   <div class="svg filter__item-svg"></div>
                 </div>
-                <ul class="availability__items">
+                <ul class="availability__items BShow">
                   <li class="availability__item">
-                    <input class="availability__item__input" type="radio" id="m-contactChoice1" name="availability" value="yes">
-                    <label class="availability__item__label" for="m-contactChoice1">В наличии
+                    <input class="availability__item__input" type="radio" id="contactChoice1" name="availability" >
+                    <label class="availability__item__label ava_label-1" for="contactChoice1">В наличии
                   </label></li>
                   <li class="availability__item">
-                    <input class="availability__item__input" type="radio" id="m-contactChoice2" name="availability" value="no">
-                    <label class="availability__item__label" for="m-contactChoice2">Под заказ
+                    <input class="availability__item__input" type="radio" id="contactChoice2" name="availability" >
+                    <label class="availability__item__label ava_label-2" for="contactChoice2">Под заказ
                   </label></li>
                 </ul>
               </div>
@@ -6520,7 +6576,7 @@
           </div>
         </div>
       </form>
-
+    <script src="./js/range.js" ></script>
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/popup.js" ></script>
     <script src="./js/script.js"></script>
