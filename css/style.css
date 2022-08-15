@@ -1395,7 +1395,7 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 40px;
+  padding-left: 20px;
   font-family: "Roboto-Regular";
   font-size: 14px;
   line-height: 30px;
@@ -1405,6 +1405,9 @@ h5 {
 .medicine__link:hover {
   color: #2fd3ae;
   font-weight: 700;
+}
+.medicine__link .categories-block__item-svg {
+  left: 5px;
 }
 
 .medicine__block {
@@ -1547,6 +1550,19 @@ h5 {
   background-size: 12px;
 }
 
+@media (max-width: 768px) {
+  .service-page {
+    padding: 15px;
+  }
+
+  .service-page__section {
+    display: block;
+  }
+
+  .service-page__block {
+    grid-gap: 15px;
+  }
+}
 .header__search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1799,8 +1815,7 @@ input::placeholder {
   }
 
   .popup-new__body {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
   }
 
   .popup-new__form {
@@ -2437,6 +2452,7 @@ input::placeholder {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 100%;
+  margin-top: -105px;
 }
 
 .main-content_button-block_2 {
@@ -2704,7 +2720,7 @@ input::placeholder {
   position: relative;
   min-height: none;
   min-width: none;
-  width: 200px;
+  width: 140px;
   height: 280px;
   padding: 100px;
 }
@@ -2871,6 +2887,10 @@ input::placeholder {
   }
 }
 @media (max-width: 768px) {
+  .left-block__img-block div {
+    height: auto;
+  }
+
   .main-content__left-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9246,6 +9266,9 @@ section.range-slider input[type=range]::-moz-focus-outer {
   height: 100%;
   background-color: rgb(132, 132, 132);
 }
+.a-video__block__video video {
+  width: 100%;
+}
 
 .article__a-share {
   margin-top: 50px;
@@ -12191,6 +12214,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
 }
 
 .address__table {
+  width: 100%;
   border-collapse: collapse;
   text-align: left;
 }

@@ -703,12 +703,15 @@
 }
 .medicine__link {
   display: flex;
-  padding-left: 40px;
+  padding-left: 20px;
   @include fontRobotoRegular(14px, 30px);
   color: $colorBlackLevel1;
   &:hover {
     color: $BGButton;
     font-weight: 700;
+  }
+  .categories-block__item-svg {
+    left: 5px;
   }
 }
 .medicine__block {
@@ -731,6 +734,7 @@
 .service-page__section.hover {
   display: block;
 }
+
 .service-page {
   padding: 40px 15px;
 }
@@ -763,6 +767,17 @@
   .header__city__svg__2 {
     background-image: url(../img/svg/Close-green.svg);
     background-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .service-page {
+    padding: 15px;
+  }
+  .service-page__section {
+    display: block;
+  }
+  .service-page__block {
+    grid-gap: 15px;
   }
 }
 .header__search {
