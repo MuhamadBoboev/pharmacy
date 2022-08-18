@@ -320,6 +320,10 @@
     width: max-content;
   }
 }
+.product-filter__button {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
 .buscet__button {
   display: flex;
   justify-content: center;
@@ -732,9 +736,15 @@
 .delivery {
   margin-top: 70px;
 }
-.delivery__body {
+.delivery_container {
+  width: 100%;
+}
+.delivery__body-1 {
   @include grid(1fr 1fr, auto);
   grid-gap: 30px;
+  @media (max-width: 768px) {
+    @include grid(1fr, auto);
+  }
 }
 .delivery__block {
   & > p {

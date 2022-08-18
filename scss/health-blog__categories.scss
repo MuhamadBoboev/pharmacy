@@ -1,4 +1,7 @@
 .health-blog__categories {
+  // @include grid(auto, 1fr);
+  display: flex;
+
   grid-gap: 10px;
   margin: 30px 0;
   height: 50px;
@@ -14,17 +17,28 @@
   align-items: center;
   background-color: $colorWhite;
   height: 100%;
-  padding: 22px;
+  padding: 10px;
   grid-gap: 10px;
+  min-width: max-content;
 }
 .health-blog__categorie__text {
   position: relative;
 
-  padding-left: 20px;
+  padding-left: 25px;
+}
+.blog-arrows {
+  background-color: $colorWhite !important;
+  box-shadow: none !important;
+}
+.prev-blog {
+  background-image: url(../img/svg/prev-blog.svg);
+}
+.next-blog {
+  background-image: url(../img/svg/next-blog.svg);
 }
 .health-blog__categorie__svg {
   position: absolute;
-  top: 15px;
+  top: 25px;
   left: 10px;
 
   width: 20px;

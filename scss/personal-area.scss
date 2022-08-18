@@ -110,22 +110,6 @@
   flex-direction: column !important;
   grid-gap: 3px !important;
 }
-// .a-order__text-1 {
-//   @include fontRobotoBold(14px, 100%);
-//   color: $colorBlackLevel2;
-// }
-// .a-order__text-3 {
-//   @include fontRobotoBold(14px, 100%);
-//   color: $BGButton;
-// }
-// .ch-order__tr {
-//   display: contents !important;
-// }
-// .a-ch-order__td {
-//   position: relative !important;
-//   display: flex;
-//   flex-direction: column;
-// }
 .pa__order__card_1 {
   padding-right: 0px !important;
   padding-bottom: 10px;
@@ -166,6 +150,20 @@
   @include fontRobotoBold(12px, 100%);
   color: $colorBlackLevel2;
 }
+.ch-order__cht-bottom {
+  @include grid(1fr 1fr, 1fr);
+  grid-gap: 30px;
+}
+.cht-bottom__button {
+  background-color: $colorWhite;
+  color: $colorBlack;
+  outline: 2px solid $BGButton;
+}
+.personal-area__order-b {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
 @media (max-width: 960px) {
   .personal-area__a-main {
     display: flex;
@@ -181,6 +179,10 @@
 }
 
 @media (max-width: 768px) {
+  .ch-order__cht-bottom {
+    @include grid(1fr, auto);
+    grid-gap: 10px;
+  }
   .personal-area__a-main {
   }
   .a-content__block-inputs {

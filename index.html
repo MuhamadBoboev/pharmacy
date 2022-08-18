@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
-
+    <link rel="icon" href="./img/svg/head.ico">
     <title>Аптека</title>
   </head>
 
@@ -653,7 +653,9 @@
         </div>
         </div>
       </form>
-
+      <div class="wrapper-top" >
+        <a href="#" class="svg wrapper-top__block" ></a>
+      </div>
       <header class="header ">
         <div class="header__top">
           <div class="_container header_container">
@@ -2248,7 +2250,7 @@
                           class="svg capabilities__img capabilities__img-1"
                         ></div>
                       </div>
-                      <div class="capabilities__info">
+                      <div class="capabilities__info capabilities__info__main ">
                         <p
                           class="header__bottom-item__svg capabilities__title fz-15px"
                         >
@@ -2272,7 +2274,7 @@
                           class="svg capabilities__img capabilities__img-2"
                         ></div>
                       </div>
-                      <div class="capabilities__info">
+                      <div class="capabilities__info capabilities__info__main">
                         <p
                           class="header__bottom-item__svg capabilities__title fz-15px"
                         >
@@ -2296,7 +2298,7 @@
                           class="svg capabilities__img capabilities__img-3"
                         ></div>
                       </div>
-                      <div class="capabilities__info">
+                      <div class="capabilities__info capabilities__info__main">
                         <p
                           class="header__bottom-item__svg capabilities__title fz-15px"
                         >
@@ -2320,7 +2322,7 @@
                           class="svg capabilities__img capabilities__img-4"
                         ></div>
                       </div>
-                      <div class="capabilities__info">
+                      <div class="capabilities__info capabilities__info__main">
                         <p
                           class="header__bottom-item__svg capabilities__title fz-15px"
                         >
@@ -2344,7 +2346,7 @@
                           class="svg capabilities__img capabilities__img-5"
                         ></div>
                       </div>
-                      <div class="capabilities__info">
+                      <div class="capabilities__info capabilities__info__main">
                         <p
                           class="header__bottom-item__svg capabilities__title fz-15px"
                         >
@@ -2365,7 +2367,16 @@
         <section class="product ">
           <div class="_container product_container">
             <div class="product__body">
-              <h2 class="main-title">Акция месяца</h2>
+              <h2 class="main-title">Акция месяца
+                <div class="swiper-wrapper__buttons">
+                  <div class="product-cards__prev swiper-button-prev">
+                    <div class="svg"></div>
+                  </div>
+                  <div class="product-cards__next swiper-button-next">
+                    <div class="svg"></div>
+                  </div>
+                </div>
+              </h2>
               <div
                 class="swiper-container product-swiper-1 product__products-1__items"
               >
@@ -2702,14 +2713,7 @@
                   </a>
                 </div>
               </div>
-              <div class="swiper-wrapper__buttons">
-                <div class="product-cards__prev swiper-button-prev">
-                  <div class="svg"></div>
-                </div>
-                <div class="product-cards__next swiper-button-next">
-                  <div class="svg"></div>
-                </div>
-              </div>
+
               <div
                 class="swiper-container product-swiper-2 product__products-1__items"
               >

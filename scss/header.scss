@@ -567,6 +567,9 @@
 }
 .header__bottom-items {
   padding: 20px 0px;
+  @media (max-width: 768px) {
+    padding-bottom: 35px;
+  }
 }
 .slider-track {
   display: flex;

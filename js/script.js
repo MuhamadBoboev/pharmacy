@@ -417,7 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
   let swCapabilities = new Swiper(".swiper-capabilities", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 10,
     // slidesView: 4,
     navigation: {
@@ -426,11 +426,11 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     breakpoints: {
       600: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 15,
       },
       961: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       1201: {
         slidesPerView: 6,
